@@ -1,0 +1,291 @@
+/*--------------------*/
+/*>>>>> Setup and Reset <<<<<*/
+/*--------------------*/
+
+body  {
+	color: #fff;
+	background-color: #7b3700;
+}
+
+h1, h2, h3, h4, h5, h6  {
+	color: #fff;
+}
+
+h1 a:link, h1 a:visited,
+h2 a:link, h2 a:visited,
+h3 a:link, h3 a:visited,
+h4 a:link, h4 a:visited,
+h5 a:link, h5 a:visited,
+h6 a:link, h6 a:visited  {
+	color: #fff;
+}
+
+/*--------------------*/
+/*>>>>> Navigation <<<<<*/
+/*--------------------*/
+
+a:link, a:visited  {
+	color: #fff;
+}
+
+#pagenav li a:link, #pagenav li a:visited  {
+	color: #fff;
+}
+
+#pagenav li a:hover, #pagenav li.current_page_item a  {
+	background-color: #974401;
+}
+
+#pagenav li.rss  {
+	background: url(rust/rss.gif) no-repeat left center;
+}
+
+/* Style drop down list */
+
+#pagenav li ul {
+	background: #a54d06;
+}
+
+#pagenav li ul li {
+	border-bottom: 1px solid #7b3700;
+}
+
+#pagenav li ul li a {
+	color: #fff !important;
+}
+
+/*--------------------*/
+/*>>>>> Layout <<<<<*/
+/*--------------------*/
+
+#topbar  {
+	border-bottom: 3px solid #974401;
+}
+
+#search label  {
+	color: #fff;
+}
+
+#search input  {
+	background-color: #9d4600;
+	border: 1px solid #6d3100;
+	color: #fff;
+}
+
+#header  {
+	border-bottom: 1px solid #582700;
+}
+
+#about img  {
+	border: 3px solid #974401;
+}
+
+#about a.more:link, #about a.more:visited  {
+	color: #fff;
+}
+
+#featured  {
+	border-top: 1px solid #a85816;
+	border-bottom: 1px solid #a85816;
+	background: url(rust/featuredbg.jpg) no-repeat left top;
+}
+
+#featured #article .meta  {
+	border-left: 1px solid #906e90;
+}
+
+#featured #article .thumb img  {
+	border: 5px solid #332233;
+}
+
+#featured #full_article .image img  {
+	border: 5px solid #974401;
+}
+
+#twitter p  {
+	background-color: #291629;
+}
+
+#twitter a#follow  {
+	background: url(rust/twitterbg.png) no-repeat left top;
+}
+
+#home_content  {
+	border-top: 1px solid #582700;
+	background: url(rust/maincontentbg.jpg) repeat-y top left;
+}
+
+#single_content  {
+	border-top: 1px solid #a85816;
+	background: url(rust/singlecontentbg.jpg) repeat-y top left;
+}
+
+#left .box  {
+	border-bottom: 1px solid #974401;
+}
+
+#left_single  {
+	background: url(rust/glowbg.jpg) no-repeat top left;
+}
+
+#middle .box  {
+	border-bottom: 1px solid #974401;
+}
+
+#right .box  {
+	border-bottom: 1px solid #974401;
+}
+
+#more_posts .item.left  {
+	border-right: 1px solid #974401;
+}
+
+#more_posts .item p img, .post .thumbnail  {
+	border: 1px solid #b45c14;
+}
+
+#ad  {
+	border-bottom: 1px solid #974401;
+}
+
+.lifestream_meta, .lifestream_meta a {
+	color: #937293;
+}
+
+#popular ul li  {
+	border-bottom: 1px solid #974401;
+}
+
+#recent_comments ul li  {
+	border-bottom: 1px solid #974401;
+}
+
+#recent_comments ul li a:link, #recent_comments ul li a:visited  {
+	color: #fff;
+}
+
+#recent_comments ul li a .author  {
+	font-family: Georgia,Times,Serif;
+	font-style: italic;
+	font-weight: bold;
+	color: #b45c14;
+}
+
+#related ul li a:link, #related ul li a:visited  {
+	color: #fff;
+	border-bottom: 1px solid #3d283d;
+}
+
+#video .video_container  {
+	background-color: #b45c14;
+}
+
+#video .player  {
+	border: 3px solid #fff;
+}
+
+#video h3.playing a:link, #video h3.playing a:visited  {
+	color: #7b3700;
+}
+
+#ads .adblock  {
+	background-color: #b45c14;
+}
+
+#cats_archives #cats  {
+	border-right: 1px solid #974401;
+}
+
+#cats_archives ul li  {
+	border-bottom: 1px solid #3d283d;
+}
+
+#subscribe ul  {
+	background-color: none;
+	border-bottom: 1px solid #974401;
+	border-top: 1px solid #974401;
+}
+
+#subscribe ul li  {
+	background: url(rust/rss.gif) no-repeat left center;
+}
+
+#footer  {
+	border-top: 3px solid #974401;
+}
+
+#footer ul li.rss  {
+	background: url(rust/rss_small.gif) no-repeat left center;
+}
+
+#footer ul li a:link, #footer ul li a:visited  {
+	color: #fff;
+}
+
+/*--------------------*/
+/*>>>>> Post Styles <<<<<*/
+/*--------------------*/
+
+.post  {
+	padding: 0 10px;
+	border-bottom: 1px solid #974401;
+}
+
+/*--------------------*/
+/*>>>>> Comments Styles <<<<<*/
+/*--------------------*/
+
+#comments span.heading  {
+	border-bottom: 1px solid #974401;
+}
+
+#comments ol  {
+	border-bottom: 1px solid #974401;
+}
+
+#comments ol li  {
+	border-bottom: 1px solid #974401;
+}
+
+#comments ol li .gravatar img  {
+	border: 2px solid #934a0f;
+}
+
+#commentform .textarea textarea  {
+	color: #fff;
+	background-color: #934a0f;
+}
+
+#commentform .details input.txt  {
+	color: #fff;
+	background-color: #934a0f;
+}
+
+#commentform .details input#submit  {
+	border-color: #934a0f;
+	background-color: #974401;
+	color: #fff;
+}
+
+div.wp-pagenavi  {
+	border-top: 1px solid #974401;
+}
+
+.wp-pagenavi span.current  {
+	background-color: #974401;
+}
+
+.entry blockquote  {
+	color: #d87d34;
+}
+
+.entry img  {
+	border: 1px solid #333;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,291 @@
+/*--------------------*/
+/*>>>>> Setup and Reset <<<<<*/
+/*--------------------*/
+
+body  {
+	color: #fff;
+	background-color: #2f1500;
+}
+
+h1, h2, h3, h4, h5, h6  {
+	color: #fff;
+}
+
+h1 a:link, h1 a:visited,
+h2 a:link, h2 a:visited,
+h3 a:link, h3 a:visited,
+h4 a:link, h4 a:visited,
+h5 a:link, h5 a:visited,
+h6 a:link, h6 a:visited  {
+	color: #fff;
+}
+
+/*--------------------*/
+/*>>>>> Navigation <<<<<*/
+/*--------------------*/
+
+a:link, a:visited  {
+	color: #915d34;
+}
+
+#pagenav li a:link, #pagenav li a:visited  {
+	color: #fff;
+}
+
+#pagenav li a:hover, #pagenav li.current_page_item a  {
+	background-color: #552905;
+}
+
+#pagenav li.rss  {
+	background: url(chocolate/rss.gif) no-repeat left center;
+}
+
+/* Style drop down list */
+
+#pagenav li ul {
+	background: #593517;
+}
+
+#pagenav li ul li {
+	border-bottom: 1px solid #2f1500;
+}
+
+#pagenav li ul li a {
+	color: #fff !important;
+}
+
+/*--------------------*/
+/*>>>>> Layout <<<<<*/
+/*--------------------*/
+
+#topbar  {
+	border-bottom: 3px solid #552905;
+}
+
+#search label  {
+	color: #fff;
+}
+
+#search input  {
+	background-color: #4d2708;
+	border: 1px solid #060300;
+	color: #fff;
+}
+
+#header  {
+	border-bottom: 1px solid #000;
+}
+
+#about img  {
+	border: 3px solid #482407;
+}
+
+#about a.more:link, #about a.more:visited  {
+	color: #915d34;
+}
+
+#featured  {
+	border-top: 1px solid #552905;
+	border-bottom: 1px solid #552905;
+	background: url(chocolate/featuredbg.jpg) no-repeat left top;
+}
+
+#featured #article .meta  {
+	border-left: 1px solid #906e90;
+}
+
+#featured #article .thumb img  {
+	border: 5px solid #915d34;
+}
+
+#featured #full_article .image img  {
+	border: 5px solid #915d34;
+}
+
+#twitter p  {
+	background-color: #291629;
+}
+
+#twitter a#follow  {
+	background: url(chocolate/twitterbg.png) no-repeat left top;
+}
+
+#home_content  {
+	border-top: 1px solid #000;
+	background: url(chocolate/maincontentbg.jpg) repeat-y top left;
+}
+
+#single_content  {
+	border-top: 1px solid #552905;
+	background: url(chocolate/singlecontentbg.jpg) repeat-y top left;
+}
+
+#left .box  {
+	border-bottom: 1px solid #482407;
+}
+
+#left_single  {
+	background: url(chocolate/glowbg.jpg) no-repeat top left;
+}
+
+#middle .box  {
+	border-bottom: 1px solid #482407;
+}
+
+#right .box  {
+	border-bottom: 1px solid #482407;
+}
+
+#more_posts .item.left  {
+	border-right: 1px solid #482407;
+}
+
+#more_posts .item p img, .post .thumbnail  {
+	border: 1px solid #915d34;
+}
+
+#ad  {
+	border-bottom: 1px solid #482407;
+}
+
+.lifestream_meta, .lifestream_meta a {
+	color: #937293;
+}
+
+#popular ul li  {
+	border-bottom: 1px solid #482407;
+}
+
+#recent_comments ul li  {
+	border-bottom: 1px solid #482407;
+}
+
+#recent_comments ul li a:link, #recent_comments ul li a:visited  {
+	color: #fff;
+}
+
+#recent_comments ul li a .author  {
+	font-family: Georgia,Times,Serif;
+	font-style: italic;
+	font-weight: bold;
+	color: #915d34;
+}
+
+#related ul li a:link, #related ul li a:visited  {
+	color: #fff;
+	border-bottom: 1px solid #3d283d;
+}
+
+#video .video_container  {
+	background-color: #391a00;
+}
+
+#video .player  {
+	border: 3px solid #fff;
+}
+
+#video h3.playing a:link, #video h3.playing a:visited  {
+	color: #915d34;
+}
+
+#ads .adblock  {
+	background-color: #391a00;
+}
+
+#cats_archives #cats  {
+	border-right: 1px solid #482407;
+}
+
+#cats_archives ul li  {
+	border-bottom: 1px solid #3d283d;
+}
+
+#subscribe ul  {
+	background-color: #391a00;
+	border-bottom: 1px solid #482407;
+	border-top: 1px solid #482407;
+}
+
+#subscribe ul li  {
+	background: url(chocolate/rss.gif) no-repeat left center;
+}
+
+#footer  {
+	border-top: 3px solid #482407;
+}
+
+#footer ul li.rss  {
+	background: url(chocolate/rss_small.gif) no-repeat left center;
+}
+
+#footer ul li a:link, #footer ul li a:visited  {
+	color: #fff;
+}
+
+/*--------------------*/
+/*>>>>> Post Styles <<<<<*/
+/*--------------------*/
+
+.post  {
+	padding: 0 10px;
+	border-bottom: 1px solid #482407;
+}
+
+/*--------------------*/
+/*>>>>> Comments Styles <<<<<*/
+/*--------------------*/
+
+#comments span.heading  {
+	border-bottom: 1px solid #482407;
+}
+
+#comments ol  {
+	border-bottom: 1px solid #482407;
+}
+
+#comments ol li  {
+	border-bottom: 1px solid #482407;
+}
+
+#comments ol li .gravatar img  {
+	border: 2px solid #47270e;
+}
+
+#commentform .textarea textarea  {
+	color: #fff;
+	background-color: #47270e;
+}
+
+#commentform .details input.txt  {
+	color: #fff;
+	background-color: #47270e;
+}
+
+#commentform .details input#submit  {
+	border-color: #47270e;
+	background-color: #482407;
+	color: #fff;
+}
+
+div.wp-pagenavi  {
+	border-top: 1px solid #482407;
+}
+
+.wp-pagenavi span.current  {
+	background-color: #482407;
+}
+
+.entry blockquote  {
+	color: #995d2c;
+}
+
+.entry img  {
+	border: 1px solid #6b3911;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+CACHE MANIFEST
+
+#Atualizado 30/10/2012
+
+# CSS
+/css/normalize.css
+/css/foundation.min.css
+/css/cssCommon.less
+
+# JS
+/js/foundation.min.js
+/js/modernizr.foundation.js
+/js/jquery.tweetable.min.js
+/js/app.js
+
+# IMG

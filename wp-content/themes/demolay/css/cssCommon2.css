@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+
+
+.center{margin:0 auto}
+.post-highlights,#recent,#videos,#cavalry,#alumni,#court{width:300px;float:left;position:relative;padding-bottom: 30px;}
+.first{margin-right:10px}
+.last{margin-left:10px}
+.mid{margin:0 10px}
+
+.cal-gme{background: #db203b; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #db203b 0%, #9a1729 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#db203b), color-stop(100%,#9a1729)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #db203b 0%,#9a1729 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #db203b 0%,#9a1729 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #db203b 0%,#9a1729 100%); /* IE10+ */
+background: radial-gradient(center, ellipse cover,  #db203b 0%,#9a1729 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db203b', endColorstr='#9a1729',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.cal-mce{background: #2064d8; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #2064d8 0%, #163999 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#2064d8), color-stop(100%,#163999)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #2064d8 0%,#163999 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #2064d8 0%,#163999 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #2064d8 0%,#163999 100%); /* IE10+ */
+background: radial-gradient(center, ellipse cover,  #2064d8 0%,#163999 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2064d8', endColorstr='#163999',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.post-highlights h2{font-size:20px;padding-bottom:5px;letter-spacing: -1px; }
+.post-highlights h2 a,#recent h4 a, #videos h4 a{color:#303030}
+.post-date{border-bottom-right-radius:2px;background-color: #fff;    display: block;    height: 50px;    left: 0;    position: absolute;    top: 0;    width: 70px;}
+.post-date li {float: right;    font-size: 10px;   height: 30px;    line-height: 18px;    padding:10px;    text-transform: uppercase;}	
+.post-date li a{color: #7c7c7c}
+.post-date li span { display: block;    font-size: 24px;    font-weight: bold;    text-align: right;}
+
+.leadership{
+		img{width:80px;height:90px;display:block;background:#454545;margin:0 10px 10px 0;float:left}
+.leadership ul li{height: 90px;  margin-bottom: 20px}
+}
+.cal-gme, .cal-mce{height:100px;   margin-bottom: 20px;position:relative}
+.cal-gme img, .cal-mce img{width:35px;height:35px;position:absolute;background:#ccc;top:-5px;left:10px}
+
+.meta {    font-size: 10px;}
+
+.widget{border-top: 3px solid #E1E1E1; padding: 20px 10px;background:#fcfcfc;
+	-webkit-transition: border-color .4s linear;  
+    -moz-transition: border-color .4s linear;  
+    -o-transition: border-color .4s linear;  
+    -ms-transition: border-color .4s linear;  
+    transition: border-color .4s linear;  
+
+}
+.widget:hover{border-top:3px solid #DB203B}
+.widgettitle{   color: #323232;    font-size: 18px;    letter-spacing: -1px;    margin-bottom: 0;    padding: 0 0 10px;}
+a{text-decoration:none;color:#e1435a}
+
+body{text-rendering: optimizeLegibility;font-family:Arial;width:100%;height:100%;font-size:12px; color:#7c7c7c}
+header{height:125px;width:100%;background:#db203b;}
+
+#breadcrumb,#menu ul,#content{width:940px;}
+
+#menu{}
+
+#menu{background:#9a1729;height:40px}
+#menu ul li{float:left;margin:12px 20px}
+#menu ul li a{color:#fff}
+
+#breadcrumb{margin-bottom: 10px;padding:10px 0}
+
+#content{overflow:hidden}
+#main{width:620px;float:left}
+
+article img{margin-bottom:10px}
+article hgroup{height:50px;padding-bottom:10px;}
+article p, .leadership p{line-height:16px; letter-spacing:-0.5px}
+
+article img,#twitter h2,#twitter > a ,.leadership img, .cal-gme, .cal-mce, .widget{.rounded-corners;}
+
+#twitter{float:left;padding-bottom: 20px;}
+#twitter > img{float: left;  margin: 4px 10px 0 8px;}
+#twitter h2{background: #DB203B;    color: #fff;    font-size: 18px;    height: 60px;    margin: 0;    padding: 0.7em 0 0 3.4em;}
+#twitter h2 span {font-size: 12px;}
+#twitter ul{font-size: 0.95em;   line-height: 1.25em}
+#twitter ul li { padding: 0.7em 3.5em 1em 6em}
+#twitter ul li:first-child, .twitterfeed ul li:first-child {    border-top: 0 none;}
+#twitter > a {    background: #e1435a;    display: block;    font-size:14px;    width: 100%;}
+#twitter > a > span{  top: -10px;    vertical-align: middle; position:relative	}
+#twitter .tweet-authorphoto, #twitter .tweet-author, #twitter .tweet-divider,.twitterfeed .tweet-authorphoto, .twitterfeed .tweet-author, .twitterfeed .tweet-divider { display: none;}
+
+#twitter ul li, .twitterfeed ul li { border-top: 1px dotted #e1e1e1;}
+#twitter ul li p{font-size: 12px;    line-height: 1.25em; letter-spacing:-0.3px}
+#twitter ul li p small{display:block; color: #c1bdbd;    font-size: 9px;    letter-spacing: -0.03em;}
+
+#recent h3, #videos h3, #cavalry h3, #alumni h3, #court h3{ color: #323232;    font-size: 18px;    letter-spacing: -1px;    margin-bottom: 0;    padding: 11px 0 17px}
+#recent h4, #videos h4, #cavalry h4, #alumni h4, #court h4 { display: block;    font-size: 16px;    letter-spacing: -1px;    line-height: 1.2em;}
+#cavalry h4.sub, #alumni h4.sub, #court h4.sub{font-size:14px}
+#cavalry h4, #alumni h4, #court h4, .leadership h4{font-size:18px}
+#recent hgroup, #videos hgroup, #cavalry hgroup, #alumni hgroup, #court hgroup{width: 195px}
+#recent article, #videos article, #cavalry article,#alumni article,#court article{position: relative;height:60px;padding:10px 0;border-top:1px dotted #e1e1e1}
+#cavalry article,#alumni article,#court article{height:auto}
+#recent h3  + article, #videos h3  + article, #cavalry h3 + article,#alumni h3 + article,#court h3 + article{border-top:none;padding-top:0}
+#recent img, #videos img{margin-bottom: 1em; margin-right: 1.2em;height:60px;width:90px}
+#recent img, #recent hgroup,#videos img, #videos hgroup{float:left}
+#recent .post-date{height: 35px; width: 40px}
+#recent .post-date li{ font-size: 8px; height: 20px; line-height:14px; padding: 6px}
+#recent .post-date li a{}
+#recent .post-date li span {font-size: 12px}
+#cavalry .post-date,#alumni .post-date,#court .post-date{height: 40px; width: 55px}
+#cavalry .post-date li,#alumni .post-date li,#court .post-date li { font-size: 9px; height:20px; line-height: 16px;  padding: 6px}
+#cavalry .post-date li a,#alumni .post-date li a#court .post-date li a{}
+#cavalry .post-date li span,#alumni .post-date li span,#court .post-date li span{font-size: 20px}
+
+#cavalry h4 a{color:#239a17}
+#alumni h4 a{color:#178c9a}
+#court h4 a, .leadership ul li h4 a{color:#173c9a}
+.leadership h4.gme, .leadership h4.mce{margin-bottom:10px}
+.leadership h4.gme a{color:#E1435A}
+#recent,#videos,#cavalry,#alumni,#court{ border-top: 3px solid #E1E1E1; border-top-left-radius: 2px; border-top-right-radius: 2px}
+#cavalry,#alumni,#court{width:190px;float: left;}
+#recent:hover,#videos:hover{border-top: 3px solid #adadad}
+#cavalry:hover{border-top: 3px solid #239A17}
+#alumni:hover{border-top: 3px solid #178c9a}
+#court:hover{border-top: 3px solid #173c9a}
+
+#sidebar_1{width:300px;float:right}
+#sidebar  + .widget{ border-top:none}
+
+footer{clear:both}

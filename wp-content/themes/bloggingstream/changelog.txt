@@ -1,0 +1,75 @@
+*** Bloggingstream Changelog ***
+
+2009.08.05 - version 2.0.0
+  * /functions/ - New WooThemes Framework (V1.0.4) (core theme functions)
+     functions.php
+  * includes/theme-comments.php - Moved from /functions/
+     includes/theme-functions.php
+     includes/theme-js.php
+     includes/theme-options.php
+     includes/theme-widgets.php
+     includes/sidebar-init.php
+  * includes/theme-options.php - Added new general & dynamic images options
+  * header.php - Fixed checkbox options ( $var == 'true' instead of just $var )
+    /ads/content_ad.php
+    archive.php
+    /featured-layouts/large_no_ad.php
+    /featured-layouts/small_with_ad.php    
+    index.php
+    sidebar.php
+    single.php   
+
+2009.04.25 - version 1.0.5
+  * header.php - Include pngfix.js, re-code logo
+  * style.css - Re-code logo
+  * /img/ - Added logo.png
+  * /functions/admin-setup.php - Remove 'custom_logo' function
+  * /includes/js/ - Added pngfix.js
+  * /styles/baby_blue/ - Deleted logo.jpg
+  * /styles/blue/ - Deleted logo.jpg
+  * /styles/chocolate/ - Deleted logo.jpg
+  * /styles/default/ - Deleted logo.jpg
+  * /styles/green/ - Deleted logo.jpg
+  * /styles/grey/ - Deleted logo.jpg
+  * /styles/purple/ - Deleted logo.jpg
+  * /styles/red/ - Deleted logo.jpg
+  * /styles/rust/ - Deleted logo.jpg
+  * /styles/baby_blue.css - Removed '#header h1 a:link, #header h1 a:visited' selector.
+  * /styles/blue.css - Removed '#header h1 a:link, #header h1 a:visited' selector.
+  * /styles/chocolate.css - Removed '#header h1 a:link, #header h1 a:visited' selector.
+  * /styles/default.css - Removed '#header h1 a:link, #header h1 a:visited' selector.
+  * /styles/green.css - Removed '#header h1 a:link, #header h1 a:visited' selector.
+  * /styles/grey.css - Removed '#header h1 a:link, #header h1 a:visited' selector.
+  * /styles/purple.css - Removed '#header h1 a:link, #header h1 a:visited' selector.
+  * /styles/red.css - Removed '#header h1 a:link, #header h1 a:visited' selector.
+  * /styles/rust.css - Removed '#header h1 a:link, #header h1 a:visited' selector.
+
+2009.04.20 - version 1.0.4
+  * functions/admin-setup.php - Updated WP-PageNavi code
+  * style.css - Updated WP-Pagenavi styling
+  * styles/chocolate.css - Updated WP-Pagenavi styling
+  * styles/default.css - Updated WP-Pagenavi styling
+  * styles/green.css - Updated WP-Pagenavi styling
+  * styles/grey.css - Updated WP-Pagenavi styling
+  * styles/purple.css - Updated WP-Pagenavi styling
+  * styles/red.css - Updated WP-Pagenavi styling
+  * styles/rust.css - Updated WP-Pagenavi styling
+  * styles/baby_blue.css - Updated WP-Pagenavi styling
+  * styles/blue.css - Updated WP-Pagenavi styling
+  
+2009.04.15 - version 1.0.3
+  * includes/js/general.js - Changed all '$' to 'jQuery'
+  * style.css - Restructured drop-downs
+  * ie7.css - Removed drop-down hacks
+  * ie6.css - Removed drop-down hacks
+
+2009.04.15 - version 1.0.2
+  * ie7.css - added styles to fix IE7 drop-down bug
+
+2009.04.15 - version 1.0.1
+  * functions.php - added function to load default.css if no stylesheet has been set
+  * custom.css - added custom.css
+  * style.css - added @import for custom.css
+  
+2009.04.14 - version 1.0.0
+  * First release!

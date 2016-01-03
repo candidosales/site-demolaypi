@@ -1,0 +1,17 @@
+/* 
+WOO CUSTOM STYLESHEET
+---------------------
+
+Instructions:
+
+Add your custom styles here instead of style.css so it 
+is easier to update the theme.
+
+You need to use .custom before every style e.g. 
+
+.custom a {color:#555555;}
+.custom #tabs {background:#000000;width:460px}
+
+*/
+
+.custom a, .custom a:visited {}
