@@ -28,13 +28,13 @@
 						<ul class="post-date">
 							<li class="date">
 								<a title="Permanent Link to <?php the_title_attribute(); ?>" rel="bookmark" href="<?php the_permalink(); ?>">
-								<span><?php the_time('j'); ?></span><?php the_time('m. Y'); ?></a>
+								<span><?php the_time('d'); ?></span><?php the_time('m/ Y'); ?></a>
 							</li>
 						</ul>
 						<a itemprop="photo" href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
 							<?php 
 							if ( function_exists( 'the_post_thumbnail' ) ){
-								the_post_thumbnail( array(300,200) );
+								the_post_thumbnail( array(400,300) );
 								}else{?>
 							<img class="thumbnail" src="<?php bloginfo('template_url'); ?>/img/1.jpg"></img>
 								<?	}?>
@@ -57,14 +57,14 @@
 					  <h2>Nothing Found</h2>
 					<?php } ?>
 		
-		<div class="large-12 columns">
+		<!--<div class="large-12 columns">
 			<section id="twitter">
 				<span class="icon-twitter" aria-hidden="true"></span>
 				<div class="tweets-pulled-listing">
 					  <h2>Em tempo real<br><span>@DeMolay_Pi</span></h2>
 				  </div>
 			</section>
-		</div>
+		</div>-->
 
 		<div class="large-12 columns">
 		<div class="large-6 columns">
@@ -92,7 +92,7 @@
 					<ul class="post-date">
 						<li class="date">
 							<a title="Permanent Link to <?php the_title_attribute(); ?>" rel="bookmark" href="<?php the_permalink(); ?>">
-								<span><?php the_time('j'); ?></span><?php the_time('m. Y'); ?></a>
+								<span><?php the_time('d'); ?></span><?php the_time('m/Y'); ?></a>
 						</li>
 					</ul>
 					<a itemprop="photo" href="<?php the_permalink(); ?>" rel="bookmark" title="Clique aqui para <?php the_title_attribute(); ?>">
@@ -143,13 +143,13 @@
 					<ul class="post-date">
 						<li class="date">
 							<a title="Permanent Link to <?php the_title_attribute(); ?>" rel="bookmark" href="<?php the_permalink(); ?>">
-								<span><?php the_time('j'); ?></span><?php the_time('m. Y'); ?></a>
+								<span><?php the_time('d'); ?></span><?php the_time('m/Y'); ?></a>
 						</li>
 					</ul>
 					<a itemprop="photo" href="<?php the_permalink(); ?>" rel="bookmark" title="Clique aqui para <?php the_title_attribute(); ?>">
 					<?php 
 						if ( function_exists( 'the_post_thumbnail' ) ){
-							the_post_thumbnail( 'thumb-2' );
+							the_post_thumbnail( 200,200 );
 						}else{?>
 							<img class="thumbnail" src="<?php bloginfo('template_url'); ?>/dist/img/1.jpg"></img>
 						<?	}?>

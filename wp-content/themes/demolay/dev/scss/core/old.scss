@@ -105,17 +105,26 @@ ul li ul, ul li ol{
     General
   ---------------------------------------------------*/
 
-h1, h2, h3, h4, h5, h6 {font-family:Arial;margin:0}
-
 .left{float:left}
 .right{float:right}
 .textLeft{text-align:left}
 .textRight{text-align:right}
 .center{margin:0 auto;width:940px}
-.post-highlights,#recent,#videos,#cavalry,#alumni,#court,#map, #mestres-regionais,#regioes, #conselho-consultivo, .direction,.wrap-1{position:relative;padding-bottom: 30px;}
-.first{margin-right:10px}
-.last{margin-left:10px}
-.mid{margin:0 10px}
+.post-highlights,#recent,#videos,#cavalry,#alumni,#court,#map, #mestres-regionais,#regioes, #conselho-consultivo, .direction,.wrap-1{
+    position:relative;
+    padding-bottom: 30px;
+    }
+    
+.first{
+    margin-right:10px
+    }
+    
+.last{
+    margin-left:10px
+    }
+.mid{
+    margin:0 10px
+    }
 
 .direction{
 	img{margin-bottom:10px;display:block;background:#ccc}
@@ -161,17 +170,38 @@ h1, h2, h3, h4, h5, h6 {font-family:Arial;margin:0}
     @include radial-gradient(#20d829, #1f9916);
     }
 
-.post-highlights h2{font-size:20px;padding-bottom:5px;margin:0}
-.post-highlights h2 a,#recent h4 a, #videos h4 a{color:#303030}
+.post-highlights h2{
+    font-size:20px;
+    padding-bottom:5px;
+    margin:0; 
+    font-weight:bold;
+    }
+    
+.post-highlights h2 a,#recent h4 a, #videos h4 a{
+    color:#303030;
+    }
+    
 .post-date{
-	border-bottom-right-radius:2px;background-color: #fff;    display: block;    height: 50px;    left: 0;    position: absolute;    top: 0;    width: 70px;
+	border-bottom-right-radius:2px;
+    background-color: #fff;
+    display: block;    
+    left: 0;
+    position: absolute;
+    top: 0;    
+    width: 70px;
 	li {
-		float: right;    font-size: 10px;   height: 30px;    line-height: 18px;    padding:10px;    text-transform: uppercase;
+		float: right;    
+        font-size: 10px;    
+        line-height: 18px;    
+        padding:10px;    
+        text-transform: uppercase;
 		a{
 			color: #7c7c7c
 			}
 		span { 
-			display: block;    font-size: 24px;    font-weight: bold;    text-align: right;
+			display: block;    
+            font-size: 24px;    
+            font-weight: bold;  
 			}
 		}
 	}
@@ -261,27 +291,32 @@ border-color: #CCCCCC #CCCCCC #AAAAAA;    box-shadow: 0 0 1px #FFFFFF inset;    
 #masthead-search-terms input {    -moz-box-sizing: border-box;    background: none repeat scroll 0 0 transparent;    border: 0 none;    display: inline-block;    font-size: 13px;    margin: 0;    outline: medium none;    padding: 2px 4px 3px;    width: 100%;
 }
 
-#breadcrumb{margin-bottom: 0px;padding:10px;
+#breadcrumb{
+    margin-bottom: 0px;
+    padding:10px;
 	p{
-		font-size:10px;padding-top:10px;
-		a{
-
-		}
+		font-size:10px;
+        padding-top:10px;
 	}
 }
 
-#content{overflow:hidden}
-#secretarios{float:left}
+#content{
+    overflow:hidden;
+    }
+    
+#secretarios{
+    float:left;
+}
 
 article{
 	img{
-		margin-bottom:10px;height: auto;max-width:100%;
+		margin-bottom:10px;
+        height: auto;
+        max-width:100%;
+        border-radius: $global-radius;
 	}
 	hgroup{
 		padding-bottom:10px;
-	}
-	p, .leadership p{
-		line-height:16px; letter-spacing:-0.5px
 	}
 }
 
@@ -301,36 +336,58 @@ article{
 			}
 		}
 	ul{
-		font-size: 0.95em;   line-height: 1.25em;
+		font-size: 0.95em;   
+        line-height: 1.25em;
 		li { 
 			padding: 0.7em 3.5em 1em 6em;
             p{
-                font-size: 12px;    line-height: 1.25em; letter-spacing:-0.3px;
+                font-size: 12px;    
+                line-height: 1.25em; 
+                letter-spacing:-0.3px;
                 small{
-                    display:block; color: #c1bdbd;    font-size: 9px;    letter-spacing: -0.03em;
+                    display:block; 
+                    color: #c1bdbd;    
+                    font-size: 9px;    
+                    letter-spacing: -0.03em;
                     }
                 }
 			}
 		}
 	> a {
-		background: #e1435a;    display: block;    font-size:14px;    width: 100%;
+		background: #e1435a;    
+        display: block;    
+        font-size:14px;    
+        width: 100%;
 		a > span{
-			top: -10px;    vertical-align: middle; position:relative
+			top: -10px;    
+            vertical-align: middle; 
+            position: relative;
 			}
 		}
 	}
 
-#twitter ul li:first-child, .twitterfeed ul li:first-child {    border-top: 0 none;}
+#twitter ul li:first-child, .twitterfeed ul li:first-child {    
+    border-top: 0 none;
+    }
 #twitter .tweet-authorphoto, #twitter .tweet-author, #twitter .tweet-divider,.twitterfeed .tweet-authorphoto, .twitterfeed .tweet-author, .twitterfeed .tweet-divider { display: none;}
 
-#twitter ul li, .twitterfeed ul li { border-top: 1px dotted #e1e1e1;}
+#twitter ul li, .twitterfeed ul li { 
+    border-top: 1px dotted #e1e1e1;
+    }
 
 #recent, #videos , #cavalry , #alumni , #court,#secretarios,#mestres-regionais,#regioes,#conselho-consultivo,.wrap-1{
     h3{
-        color: #323232;    font-size: 18px;    letter-spacing: -1px;    margin-bottom: 0;    padding: 11px 0 17px
+        color: #323232;    
+        font-size: 18px;   
+        text-transform: uppercase;    
+        margin-bottom: 0;    
+        padding: 11px 0 17px
         }
     h4 {
-        display: block;    font-size: 16px;    letter-spacing: -1px;    line-height: 1.2em; 
+        display: block;    
+        font-size: 16px;    
+        letter-spacing: -1px;    
+        line-height: 1.2em; 
         }
     }
 
@@ -341,16 +398,18 @@ article{
     }
 #cavalry , #alumni , #court , .leadership{
 	h4{
-		font-size:18px
-		}
+    	font-size:18px;
+        font-weight: bold;
 	}
+}
 
 #recent, #videos, #cavalry ,#alumni,#court{
     article{
-        position: relative;padding:10px 0;border-top:1px dotted #e1e1e1
+        position: relative;
+        margin: 10px 0;
         }
       div.more{
-		    border-top: 1px dotted #E1E1E1;
+		    border-top: 1px solid #E1E1E1;
 		    float: left;
 		    padding: 10px 0 20px 0;
 		    width: 100%;
@@ -379,7 +438,7 @@ article{
 	}
 #recent , #videos {
     img{
-        margin-bottom: 0.5em; height:60px;width:90px;float:left;
+        margin-bottom: 0.5em; width:40%;float:left;
         }
     }
 #recent hgroup, #videos hgroup{width:58%;float:right}
@@ -705,11 +764,6 @@ footer{clear:both}
 	}
 
 @media (min-width: 768px) and (max-width: 979px) { 
-	article{
-		img{
-			max-width: 100%;max-height: 143px;
-		}
-	}
 	.direction{
 		img{
 			max-width:100%;max-height:100%;
@@ -731,11 +785,6 @@ footer{clear:both}
 				img{max-height:90px}
 			}
 		}
-		article{
-			img{
-				max-height:170px;
-			}
-		}
 		img{
 				max-height:170px;
 			}
@@ -751,12 +800,6 @@ footer{clear:both}
 }
 
 @media (min-width: 1200px) { 
-
-	article{
-		img{
-			max-width: 100%;max-height: 180px;
-		}
-	}
 	.direction{
 		img{
 			max-width:100%;max-height:100%;

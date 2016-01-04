@@ -7724,10 +7724,6 @@ ul li ul, ul li ol {
 /*---------------------------------------------------
     General
   ---------------------------------------------------*/
-h1, h2, h3, h4, h5, h6 {
-  font-family: Arial;
-  margin: 0; }
-
 .left {
   float: left; }
 
@@ -7812,7 +7808,8 @@ h1, h2, h3, h4, h5, h6 {
 .post-highlights h2 {
   font-size: 20px;
   padding-bottom: 5px;
-  margin: 0; }
+  margin: 0;
+  font-weight: bold; }
 
 .post-highlights h2 a, #recent h4 a, #videos h4 a {
   color: #303030; }
@@ -7821,7 +7818,6 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-right-radius: 2px;
   background-color: #fff;
   display: block;
-  height: 50px;
   left: 0;
   position: absolute;
   top: 0;
@@ -7829,7 +7825,6 @@ h1, h2, h3, h4, h5, h6 {
   .post-date li {
     float: right;
     font-size: 10px;
-    height: 30px;
     line-height: 18px;
     padding: 10px;
     text-transform: uppercase; }
@@ -7838,8 +7833,7 @@ h1, h2, h3, h4, h5, h6 {
     .post-date li span {
       display: block;
       font-size: 24px;
-      font-weight: bold;
-      text-align: right; }
+      font-weight: bold; }
 
 .leadership img {
   display: block;
@@ -8060,14 +8054,11 @@ header {
 article img {
   margin-bottom: 10px;
   height: auto;
-  max-width: 100%; }
+  max-width: 100%;
+  border-radius: 5px; }
 
 article hgroup {
   padding-bottom: 10px; }
-
-article p, article .leadership p {
-  line-height: 16px;
-  letter-spacing: -0.5px; }
 
 #twitter h2, #twitter > a, .leadership img, .cal-gme, .cal-mce, .widget, #banner img, #secretarios img,
 #mestres-regionais img, #conselho-consultivo img, .wrap-1 img {
@@ -8127,7 +8118,7 @@ article p, article .leadership p {
 #recent h3, #videos h3, #cavalry h3, #alumni h3, #court h3, #secretarios h3, #mestres-regionais h3, #regioes h3, #conselho-consultivo h3, .wrap-1 h3 {
   color: #323232;
   font-size: 18px;
-  letter-spacing: -1px;
+  text-transform: uppercase;
   margin-bottom: 0;
   padding: 11px 0 17px; }
 
@@ -8141,15 +8132,15 @@ article p, article .leadership p {
   font-size: 14px; }
 
 #cavalry h4, #alumni h4, #court h4, .leadership h4 {
-  font-size: 18px; }
+  font-size: 18px;
+  font-weight: bold; }
 
 #recent article, #videos article, #cavalry article, #alumni article, #court article {
   position: relative;
-  padding: 10px 0;
-  border-top: 1px dotted #e1e1e1; }
+  margin: 10px 0; }
 
 #recent div.more, #videos div.more, #cavalry div.more, #alumni div.more, #court div.more {
-  border-top: 1px dotted #E1E1E1;
+  border-top: 1px solid #E1E1E1;
   float: left;
   padding: 10px 0 20px 0;
   width: 100%; }
@@ -8169,8 +8160,7 @@ article p, article .leadership p {
 
 #recent img, #videos img {
   margin-bottom: 0.5em;
-  height: 60px;
-  width: 90px;
+  width: 40%;
   float: left; }
 
 #recent hgroup, #videos hgroup {
@@ -8571,9 +8561,6 @@ footer {
   max-height: 130px; }
 
 @media (min-width: 768px) and (max-width: 979px) {
-  article img {
-    max-width: 100%;
-    max-height: 143px; }
   .direction img {
     max-width: 100%;
     max-height: 100%; }
@@ -8583,8 +8570,6 @@ footer {
     max-height: 130px; }
   .gce ul li img {
     max-height: 90px; }
-  .gce article img {
-    max-height: 170px; }
   .gce img {
     max-height: 170px; }
   #cavalry article img, #alumni article img, #court article img {
@@ -8592,9 +8577,6 @@ footer {
     max-height: 104px; } }
 
 @media (min-width: 1200px) {
-  article img {
-    max-width: 100%;
-    max-height: 180px; }
   .direction img {
     max-width: 100%;
     max-height: 100%; }
@@ -8612,8 +8594,19 @@ footer {
     max-width: 170px;
     max-height: 114px; } }
 
+body, p, h1, h2, h3, h4, h5 {
+  line-height: 1;
+  font-family: "Roboto", Arial, sans-serif; }
+
+h1, h2, h3 {
+  font-weight: 600; }
+
+p {
+  color: #828282; }
+
 ul {
-  list-style: none; }
+  list-style: none;
+  margin-left: 0; }
   ul li {
     list-style: none; }
 
@@ -8623,8 +8616,19 @@ ul {
 .row {
   max-width: 100em; }
 
+.top-bar .name h1 {
+  line-height: 2.8125rem; }
+
+.top-bar-section ul li > a {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase; }
+
 .top-bar, .top-bar-section ul li, .top-bar-section li:not(.has-form) a:not(.button), .top-bar-section .has-form {
   background: #9d172a; }
+
+.top-bar-section li:not(.has-form) a:not(.button):hover, .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+  background: #71101e; }
 
 @font-face {
   font-family: 'icomoon';
@@ -8705,3 +8709,9 @@ ul {
 
 .icon-mobile:before {
   content: "\e012"; }
+
+.searchform input {
+  background: #6e101d;
+  border-color: transparent;
+  border-radius: 5px;
+  color: #fff; }

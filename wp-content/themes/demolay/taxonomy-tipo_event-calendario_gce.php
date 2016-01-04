@@ -2,7 +2,7 @@
 <div class="row">
   	<div id="calendario" class="eight columns">
 	 <h2> <span class="icon-calendar" aria-hidden="true"></span>Calendário GCE</h2>
-	   <div class="twelve columns">
+	   <div class="large-12 columns">
 
 	   		   	<?php 				 
 					  /* $args = array(
@@ -41,13 +41,13 @@
 							 }
 						 ?>
 							<li>
-								<div class="two columns details">
+								<div class="large-2 columns details">
 									<p class="date"><span class="icon-calendar" aria-hidden="true"></span> <?php 
 										echo date('d/m', strtotime($event_date));
 									?></p>
 									<p><span class="icon-clock" aria-hidden="true"></span> <?php echo get_post_meta(get_the_ID(), 'event_start_time', true);?></p>
 								</div>
-								<div class="ten columns">
+								<div class="large-10 columns">
 									<p class="title">
 										<a href="<?php the_permalink() ?>" rel="bookmark" title="link para <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 									</p>
@@ -71,7 +71,7 @@
 	   
 	   </div>
 	</div><!-- eight columns-->
-	<div class="four columns">
+	<div class="large-4 columns">
 		<?php get_sidebar("cavalaria"); ?>
 	</div>
 </div><!-- row-->

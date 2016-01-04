@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="row">
+<div class="row content-main">
   	<div class="large-8 columns">
 <?php if (have_posts()){ ?>
   <?php while (have_posts()) {
@@ -11,7 +11,7 @@
 			</h2>
 		  <?php echo get_post_meta($post->ID, 'PostThumb',true); ?>
 		  <p class="meta">
-			<span>Por</span> <?php the_author_meta("first_name"); ?> <span>em</span> <?php the_time('j.m.Y'); ?> | <?php the_category(', '); ?> 
+			<span>Por</span> <?php the_author_meta("first_name"); ?> <span>em</span> <?php the_time('j/m.Y'); ?> | <?php the_category(', '); ?> 
 		  </p>
 	  </hgroup>
 	  <div class="social">

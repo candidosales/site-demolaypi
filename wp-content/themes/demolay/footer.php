@@ -1,13 +1,13 @@
-	<div class="twelve columns footer">
+	<div class="large-12 columns footer">
 		<div class="row">
-			<div class="twelve columns">
+			<div class="large-12 columns">
 			<footer role="contentinfo">
-				<div class="six columns">
+				<div class="large-6 columns">
 					<p>Rua Magalhães Filho, 1270 Marquês</p>
 					<p>64002-450</p>
 					<p>Teresina-PI</p>
 				</div>
-				<div class="six columns">
+				<div class="large-6 columns">
 					<div id="site-info">
 						<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 							<?php bloginfo( 'name' ); ?>
@@ -57,7 +57,7 @@
 
 	</script>
     
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700|PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() )  ?>/dist/css/style.css" />
     <script src="<?php echo esc_url( get_template_directory_uri() ) ?>/dist/js/main.js"></script>
 </body>

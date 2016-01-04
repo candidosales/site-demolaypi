@@ -45,20 +45,20 @@
 					</div>
 					
 				</div>		
-			<?} 
+			<?php } 
 			}?>
 		
 		</li>
 		<li class="widget calendar">
 			<h2 class="widgettitle">Calendário</h2>
-			<? require_once('ext/cal-gme.php'); ?>
-			<? require_once('ext/cal-mce.php'); ?>
+			<?php get_template_part('inc/cal-gme'); ?>
+			<?php get_template_part('inc/cal-mce'); ?>
 		</li>
 		<li class="widget" id="webmail">
-	 		<? require_once('ext/webmail.php'); ?>
+	 		<?php get_template_part('inc/webmail'); ?>
 	 	</li>
 		<li class="widget" >	
-			<? require_once('ext/publicidade.php'); ?>
+			<?php get_template_part('inc/publicidade'); ?>
 		</li>
 		
 	  <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar()) { ?>

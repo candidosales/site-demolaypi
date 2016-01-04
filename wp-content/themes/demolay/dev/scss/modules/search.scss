@@ -1,0 +1,8 @@
+.searchform{
+    input{
+        background: darken($color-red-2, 10%);
+        border-color: transparent;
+        border-radius: $global-radius;
+        color: #fff;
+    }   
+}

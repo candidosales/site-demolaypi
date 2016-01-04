@@ -5,7 +5,19 @@
 .row{
     max-width: 100em;
 }
+.top-bar .name h1{
+    line-height: 2.8125rem;
+}
 
+.top-bar-section ul li > a{
+    font-family: $font-family-general;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 .top-bar, .top-bar-section ul li, .top-bar-section li:not(.has-form) a:not(.button), .top-bar-section .has-form{
 	background:#9d172a;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover, .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button){
+    background: darken(#9d172a,10%);
 }

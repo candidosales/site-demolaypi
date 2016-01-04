@@ -1,5 +1,17 @@
+body, p, h1, h2, h3, h4,h5{
+    line-height: 1;
+    font-family: $font-family-general;
+}
+
+h1,h2,h3{
+    font-weight: 600;
+}
+p{
+    color: $color-text-secundary;
+}
 ul{
     list-style: none;
+    margin-left: 0;
     li{
         list-style: none;
     }

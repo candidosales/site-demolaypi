@@ -2,7 +2,7 @@
  <ul>
 	<li class="widget calendar">
 		<h2 class="widgettitle">Calendário</h2>
-		<? require_once('ext/cal-gme.php'); ?>
+		<?php get_template_part('inc/cal-gme'); ?>
 	</li>
 	<li class="widget calendar">
 		<h2 class="widgettitle">Twitter</h2>
@@ -17,7 +17,7 @@
 		<h2 class="widgettitle">Álbum</h2>
 	</li>
 	<li class="widget" >
-		<? require_once('ext/publicidade.php'); ?>
+		<?php get_template_part('inc/publicidade'); ?>
 	</li>
   <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar()) { ?>
    <li><!-- stuff shown here in case no widgets active --></li>

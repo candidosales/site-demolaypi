@@ -57,7 +57,7 @@
 							if(strlen(trim($image['url'])) > 0) { 
 						?>
 
-							<div class="six columns">
+							<div class="large-6 columns">
 								<a href="<?php echo $url; ?>" target="_blank">
 									<img title="<?php the_title(); ?>" class="has-tip tip-top useful" src="<?php echo $image['url']; ?>"/>
 								</a>
