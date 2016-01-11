@@ -1,6 +1,6 @@
 		<div class="cal-mce">
 			<a href="<?php bloginfo('url')?>/tipo_event/calendario_gelj/">
-				<img width="50" height="50" src="<?php bloginfo('template_url'); ?>/img/glej-mini.png"/>
+				<img width="50" height="50" src="<?php bloginfo('template_url'); ?>/dist/img/glej-mini.png"/>
 			</a>
 			<?
 				$args = array(

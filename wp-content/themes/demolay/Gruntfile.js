@@ -87,6 +87,7 @@ module.exports = function(grunt) {
           'bower_components/foundation/js/vendor/modernizr.js',
           'bower_components/foundation/js/vendor/fastclick.js',
           'dev/js/vendor/foundation.custom.min.js',
+          'bower_components/slick-carousel/slick/slick.js',
           'dev/js/app.js'],
           dest: 'dist/js/main.js',
         },

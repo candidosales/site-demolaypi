@@ -10,12 +10,12 @@
 					$gce->the_post();
 				?>		
 				<div class="row">
-					<div class="large-4 columns">
+					<div class="large-4 small-4 columns">
 						<a itemprop="title" href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
 							<img src="<?php echo esc_url( get_template_directory_uri() )  ?>/dist/img/gme-tratada-thumb.jpg"/>
 						</a>
 					</div>
-					<div class="large-8 columns">
+					<div class="large-8 small-8 columns">
 						<h4 class="gme">
 								<a itemprop="title" href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 						</h4>
@@ -32,12 +32,12 @@
 					$mce->the_post();
 				?>		
 				<div class="row">
-					<div class="large-4 columns">
+					<div class="large-4 small-4 columns">
 						<a itemprop="title" href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
 							<img src="<?php echo esc_url( get_template_directory_uri() )  ?>/dist/img/mce-tratada-thumb.jpg"/>
 						</a>
 					</div>
-					<div class="large-8 columns">
+					<div class="large-8 small-8 columns">
 						<h4 class="mce">
 								<a itemprop="title" href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 						</h4>

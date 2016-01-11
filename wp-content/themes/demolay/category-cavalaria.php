@@ -1,8 +1,8 @@
 <?php get_header(); ?>
-<div class="row">
-  	<div class="eight columns">
+<div class="row content-main">
+  	<div class="large-8 columns">
 	   <section id="map">
-	   		<div id="map_canvas" style="height: 422px;"></div>
+	   		<div id="map_canvas" style="hlarge-8: 422px;"></div>
 	   </section>
 	   <div class="six columns">
 	   <section id="mestres-regionais">
@@ -140,10 +140,10 @@
 	   </section>
 	</div>
 	<div class="six columns">
-	   <section id="cal-cav" class="wrap-1" style="height:520px">
+	   <section id="cal-cav" class="wrap-1" style="hlarge-8:520px">
 	   	<h3>Calendário</h3>
 	   	<div class="cal-cav">
-	   		<img width="50" height="50" src="<?php bloginfo('template_url'); ?>/img/glej-mini.png"></img>
+	   		<img width="50" hlarge-8="50" src="<?php bloginfo('template_url'); ?>/img/glej-mini.png"></img>
 	   	</div>
 	   </section>
 	</div>
@@ -343,8 +343,8 @@
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/api-google-maps-cavalaria.js"></script>
 	   
 
-	</div><!-- eight columns-->
-	<div class="four columns">
+	</div><!-- large-8 columns-->
+	<div class="large-4 columns">
 		<?php get_sidebar("cavalaria"); ?>
 	</div>
 </div><!-- row-->

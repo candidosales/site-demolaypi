@@ -1,8 +1,9 @@
 
 
 <?php get_header(); ?>
-<div class="row">
+<div class="row content-main">
   	<div id="news" class="large-8 columns">
+        <div class="row">  
   		<?php if ( have_posts() ) { ?>
   		  <h2>Resultados da pesquisa para: <span><?php echo get_search_query()?></span></h2>
 	   	  <div class="large-12 columns">
@@ -15,7 +16,7 @@
 	   	  			<ul class="post-date">
 	   	  				<li class="date">
 						<a title="Permanent Link to <?php the_title_attribute(); ?>" rel="bookmark" href="<?php the_permalink(); ?>">
-							<span><?php the_time('j'); ?></span><?php the_time('m. Y'); ?></a>
+							<span><?php the_time('d'); ?></span><?php the_time('m/Y'); ?></a>
 						</li>
 					</ul>
 					<a itemprop="photo" href="<?php the_permalink(); ?>" rel="bookmark" title="Clique aqui para <?php the_title_attribute(); ?>">
@@ -57,7 +58,7 @@
 	   	 	<?php }?>
 	   	  </div>
 
-
+        </div>             
 	</div><!-- large-8 columns-->
 	<div class="large-4 columns">
 		<?php get_sidebar("cavalaria"); ?>

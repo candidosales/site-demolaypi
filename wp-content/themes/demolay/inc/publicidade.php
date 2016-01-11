@@ -1,6 +1,6 @@
 		<div class="row">
-				<div class="twelve columns">
-					<div id="featured">
+				<div class="large-12 columns">
+					<div id="carousel">
 						<?
 						$args = array(
 							'post_type' => 'advertising',
@@ -24,9 +24,11 @@
 
 							if(strlen(trim($image['url'])) > 0) { 
 						?>
+                           <div>
 						    <a href="<?php echo $url; ?>" target="_blank">
-								<img src="<?php echo $image['url']; ?>" width="280" height="200" />
+								<img src="<?php echo $image['url']; ?>"/>
 							</a>
+                           </div>
 						<?	}
 					}
 				}?>
@@ -57,7 +59,7 @@
 							if(strlen(trim($image['url'])) > 0) { 
 						?>
 
-							<div class="large-6 columns">
+							<div class="large-6 small-6 columns">
 								<a href="<?php echo $url; ?>" target="_blank">
 									<img title="<?php the_title(); ?>" class="has-tip tip-top useful" src="<?php echo $image['url']; ?>"/>
 								</a>

@@ -1,8 +1,8 @@
 <?php get_header(); ?>
-<div class="row">
-  	<div id="blog" class="eight columns">
+<div class="row content-main">
+  	<div id="blog" class="large-8 columns">
   		  <h2><span class="icon-pencil" aria-hidden="true"></span>Tutoriais</h2>
-	   	  <div class="twelve columns">
+	   	  <div class="large-12 columns">
 
 	  		<?php 
 
@@ -14,7 +14,7 @@
       									
 
 	   	  	<article>
-	   	  		<div class="four columns">
+	   	  		<div class="large-4 columns">
 	   	  			<ul class="post-date">
 	   	  				<li class="date">
 						<a title="Permanent Link to <?php the_title_attribute(); ?>" rel="bookmark" href="<?php the_permalink(); ?>">
@@ -31,7 +31,7 @@
 							<?	}?>
 					</a>
 	   	  		</div>
-	   	  		<div class="eight columns">
+	   	  		<div class="large-8 columns">
 	   	  			<hgroup>
 						<h4>
 							<a itemprop="title" href="<?php the_permalink(); ?>" rel="bookmark" title="Clique aqui para <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
@@ -52,8 +52,8 @@
 			
 	   	  </div>
 
-	</div><!-- eight columns-->
-	<div class="four columns">
+	</div><!-- large-8 columns-->
+	<div class="large-4 columns">
 		<?php get_sidebar("cavalaria"); ?>
 	</div>
 </div><!-- row-->

@@ -1,3 +1,11 @@
+## 3.0.2.0 *(2016-01-03)*
+
+* Corrigido as páginas de categorias;
+* Antigo: 59 requests / 23.7 kb transfered / Finish: 7.66s / DOMContentLoaded: 5.27s / Load: 7.07s
+* Antigo: 34 requests / 15.4 kb transfered / Finish: 2.40s / DOMContentLoaded: 1.65s / Load: 2.44s
+* Slide propagandas slick;
+* 5 notícias na sub;
+
 ## 3.0.1.0 *(2016-01-03)*
 
 * Melhorado a UI da Home e das páginas de Documentos Oficiais;

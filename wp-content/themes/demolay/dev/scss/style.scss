@@ -1,10 +1,12 @@
  @import "../../bower_components/foundation/scss/normalize",
          "vendor/foundation.custom",
          "../../bower_components/bourbon/dist/bourbon", // Framework for SASS com mixins
-		 "../../bower_components/animate.css/animate";
+		 "../../bower_components/animate.css/animate",
+         "../../bower_components/slick-carousel/slick/slick.scss",
+         "../../bower_components/slick-carousel/slick/slick-theme.scss";
 
 // @import "helpers/animate",
-// "helpers/respond-to";
+//         "helpers/respond-to";
 
 @import "core/settings",
         "core/old",

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -7612,6 +7613,211 @@ Copyright (c) 2015 Daniel Eden
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff url("./ajax-loader.gif") center center no-repeat; }
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url("./fonts/slick.eot");
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  margin-top: -10px\9;
+  /*lte IE 8*/
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none; }
+  .slick-prev:hover, .slick-prev:focus,
+  .slick-next:hover,
+  .slick-next:focus {
+    outline: none;
+    background: transparent;
+    color: transparent; }
+    .slick-prev:hover:before, .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before {
+      opacity: 1; }
+  .slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before {
+    opacity: 0.25; }
+
+.slick-prev:before, .slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.slick-prev {
+  left: -25px; }
+  [dir="rtl"] .slick-prev {
+    left: auto;
+    right: -25px; }
+  .slick-prev:before {
+    content: "←"; }
+    [dir="rtl"] .slick-prev:before {
+      content: "→"; }
+
+.slick-next {
+  right: -25px; }
+  [dir="rtl"] .slick-next {
+    left: -25px;
+    right: auto; }
+  .slick-next:before {
+    content: "→"; }
+    [dir="rtl"] .slick-next:before {
+      content: "←"; }
+
+/* Dots */
+.slick-slider {
+  margin-bottom: 30px; }
+
+.slick-dots {
+  position: absolute;
+  bottom: -45px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  width: 100%; }
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer; }
+    .slick-dots li button {
+      border: 0;
+      background: transparent;
+      display: block;
+      height: 20px;
+      width: 20px;
+      outline: none;
+      line-height: 0px;
+      font-size: 0px;
+      color: transparent;
+      padding: 5px;
+      cursor: pointer; }
+      .slick-dots li button:hover, .slick-dots li button:focus {
+        outline: none; }
+        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+          opacity: 1; }
+      .slick-dots li button:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "•";
+        width: 20px;
+        height: 20px;
+        font-family: "slick";
+        font-size: 6px;
+        line-height: 20px;
+        text-align: center;
+        color: black;
+        opacity: 0.25;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+    .slick-dots li.slick-active button:before {
+      color: black;
+      opacity: 0.75; }
+
 /*---------------------------------------------------
     WordPress
   ---------------------------------------------------*/
@@ -7893,7 +8099,7 @@ ul li ul, ul li ol {
 
 a {
   text-decoration: none;
-  color: #e1435a; }
+  color: #9a1729; }
 
 b {
   font-weight: bold; }
@@ -8055,7 +8261,8 @@ article img {
   margin-bottom: 10px;
   height: auto;
   max-width: 100%;
-  border-radius: 5px; }
+  border-radius: 5px;
+  max-height: 240px; }
 
 article hgroup {
   padding-bottom: 10px; }
@@ -8137,7 +8344,8 @@ article hgroup {
 
 #recent article, #videos article, #cavalry article, #alumni article, #court article {
   position: relative;
-  margin: 10px 0; }
+  margin: 10px 0;
+  min-height: 112px; }
 
 #recent div.more, #videos div.more, #cavalry div.more, #alumni div.more, #court div.more {
   border-top: 1px solid #E1E1E1;
@@ -8161,7 +8369,8 @@ article hgroup {
 #recent img, #videos img {
   margin-bottom: 0.5em;
   width: 40%;
-  float: left; }
+  float: left;
+  max-height: 106px; }
 
 #recent hgroup, #videos hgroup {
   width: 58%;
@@ -8370,7 +8579,8 @@ article hgroup {
   float: left;
   padding: 2% 0;
   border-bottom: 1px solid #ddd;
-  width: 100%; }
+  width: 48%;
+  margin-right: 1%; }
   #documents ul li:hover, #library ul li:hover {
     background: #F7F79E; }
   #documents ul li [class^="icon-"], #library ul li [class^="icon-"] {
@@ -8432,7 +8642,7 @@ article hgroup {
   float: left;
   width: 100%;
   border-bottom: 1px dotted #ccc;
-  padding: 10px; }
+  padding: 10px 0; }
 
 #calendario h2 {
   font-size: 22px;
@@ -8610,6 +8820,10 @@ ul {
   ul li {
     list-style: none; }
 
+footer p {
+  line-height: 1;
+  color: #fff; }
+
 .content-main {
   margin-top: 20px; }
 
@@ -8630,70 +8844,42 @@ ul {
 .top-bar-section li:not(.has-form) a:not(.button):hover, .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
   background: #71101e; }
 
+.no-padding {
+  padding: 0; }
+
+.search__button {
+  background: transparent; }
+  .search__button:hover {
+    background: #9a1729; }
+
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+  background: #c61e35; }
+
+.slick-slider {
+  margin-bottom: 50px; }
+
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon/icomoon.eot");
-  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.svg#icomoon") format("svg"), url("../fonts/icomoon/icomoon.woff") format("woff"), url("../fonts/icomoon/icomoon.ttf") format("truetype");
+  src: url("../fonts/icomoon.eot?m2n7mj");
+  src: url("../fonts/icomoon.eot?m2n7mj#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?m2n7mj") format("truetype"), url("../fonts/icomoon.woff?m2n7mj") format("woff"), url("../fonts/icomoon.svg?m2n7mj#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
-[data-icon]:before {
-  font-family: 'icomoon';
-  content: attr(data-icon);
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
   speak: none;
-  font-weight: normal;
-  -webkit-font-smoothing: antialiased; }
-
-/* Use the following CSS code if you want to have a class per icon */
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: 'icomoon';
   font-style: normal;
-  speak: none;
   font-weight: normal;
-  -webkit-font-smoothing: antialiased; }
-
-.icon-play:before {
-  content: "\e001"; }
-
-.icon-wordpress:before {
-  content: "\e008"; }
-
-.icon-twitter:before {
-  content: "\e00a"; }
-
-.icon-facebook:before {
-  content: "\e00b"; }
-
-.icon-html5:before {
-  content: "\e00c"; }
-
-.icon-file-excel:before {
-  content: "\e00d"; }
-
-.icon-file-word:before {
-  content: "\e00e"; }
-
-.icon-file-pdf:before {
-  content: "\e00f"; }
-
-.icon-pencil:before {
-  content: "\e010"; }
-
-.icon-file:before {
-  content: "\e000"; }
-
-.icon-phone:before {
-  content: "\e003"; }
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .icon-mail:before {
   content: "\e004"; }
-
-.icon-calendar:before {
-  content: "\e005"; }
-
-.icon-book:before {
-  content: "\e006"; }
 
 .icon-file-powerpoint:before {
   content: "\e007"; }
@@ -8709,6 +8895,66 @@ ul {
 
 .icon-mobile:before {
   content: "\e012"; }
+
+.icon-pencil2:before {
+  content: "\e903"; }
+
+.icon-play:before {
+  content: "\e904"; }
+
+.icon-book:before {
+  content: "\e905"; }
+
+.icon-books:before {
+  content: "\e906"; }
+
+.icon-library:before {
+  content: "\e907"; }
+
+.icon-file-empty:before {
+  content: "\e908"; }
+
+.icon-phone:before {
+  content: "\e909"; }
+
+.icon-calendar:before {
+  content: "\e90a"; }
+
+.icon-search:before {
+  content: "\e900"; }
+
+.icon-share:before {
+  content: "\e901"; }
+
+.icon-share2:before {
+  content: "\e902"; }
+
+.icon-facebook2:before {
+  content: "\e90b"; }
+
+.icon-twitter:before {
+  content: "\e90c"; }
+
+.icon-wordpress:before {
+  content: "\e90d"; }
+
+.icon-file-pdf:before {
+  content: "\e90e"; }
+
+.icon-file-openoffice:before {
+  content: "\e90f"; }
+
+.icon-file-word:before {
+  content: "\e910"; }
+
+.icon-file-excel:before {
+  content: "\e911"; }
+
+.icon-libreoffice:before {
+  content: "\e912"; }
+
+.icon-html5:before {
+  content: "\e913"; }
 
 .searchform input {
   background: #6e101d;

@@ -18,10 +18,10 @@
 	 	<form id="form_webmail" method="post" action="https://www.google.com/a/demolaypi.org.br/LoginAction2?service=mail">
 			 <label>Nome de usuário</label>
 			  <div class="row collapse">
-	          <div class="five mobile-three columns">
+	          <div class="large-5 mobile-three columns">
 	            <input type="text" placeholder="usuário" name="Email" id="Email">
 	          </div>
-	          <div class="seven mobile-one columns">
+	          <div class="large-7 mobile-one columns">
 	            <span class="postfix">@demolaypi.org.br</span>
 	          </div>
 	        </div>
@@ -36,5 +36,5 @@
 			<input type="hidden" name="timeStmp" id="timeStmp" value="">
 			<input type="hidden" name="secTok" id="secTok" value="">
 			<input type="hidden" name="GALX" value="PblgPudct-w">       
-	        <input type="submit" value="Login" id="signIn" name="signIn" class="button">
+	        <input type="submit" value="Login" id="signIn" name="signIn" class="button tiny">
 		</form>

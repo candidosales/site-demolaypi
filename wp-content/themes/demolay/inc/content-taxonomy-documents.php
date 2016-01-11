@@ -7,7 +7,7 @@
 				 ?>
 	
 	   		<li>
-		   		<div class="large-1 columns">
+		   		<div class="large-2 columns">
 		   			<?php $doc = get_post_meta(get_the_ID(), 'wp_custom_attachment', true);  
 					if(strlen(trim($doc['url'])) > 0) { 
 					 ?>
@@ -17,7 +17,7 @@
 					<?	}?>
 		  			 
 		   		</div>
-		   		<div class="large-11 columns">
+		   		<div class="large-10 columns">
 		   			<hgroup>
 		   				<h3>
 		   					<a target="_blank" href="<?php echo $doc['url']; ?>"> 

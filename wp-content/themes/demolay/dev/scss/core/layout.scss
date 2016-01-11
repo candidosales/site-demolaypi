@@ -21,3 +21,22 @@
 .top-bar-section li:not(.has-form) a:not(.button):hover, .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button){
     background: darken(#9d172a,10%);
 }
+
+.no-padding{
+    padding: 0;
+}
+
+.search__button {
+    background: transparent;
+    &:hover{
+        background: $color-red-2;
+    }
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button){
+ background: lighten($color-red-2, 10%);   
+}
+
+.slick-slider{
+ margin-bottom: 50px;   
+}

@@ -43,22 +43,20 @@
 	  })();
 
 
-	  //UserVoice
-
-	
-  var uvOptions = {};
-  (function() {
-    var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
-    uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/Vn6eFgEE0do3tmHgCMdYOg.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
-  })();
+	  //UserVoice	
+//   var uvOptions = {};
+//   (function() {
+//     var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+//     uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/Vn6eFgEE0do3tmHgCMdYOg.js';
+//     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+//   })();
 
 
 
 	</script>
     
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() )  ?>/dist/css/style.css" />
-    <script src="<?php echo esc_url( get_template_directory_uri() ) ?>/dist/js/main.js"></script>
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() )  ?>/dist/css/style.min.css" />
+    <script src="<?php echo esc_url( get_template_directory_uri() ) ?>/dist/js/main.min.js"></script>
 </body>
 </html>

@@ -1,20 +1,21 @@
 <?php get_header(); ?>
-<div class="row">
-  	<div id="blog" class="eight columns">
+<div class="row content-main">
+  	<div id="blog" class="large-8 columns">
   		  <h2>Notícias da Cavalaria</h2>
-	   	  <div class="twelve columns">
+          <div class="row">
+	   	  <div class="large-12 columns">
 
 	  		<?php 
 
 
 	  			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-				query_posts('cat=33&paged=' . $paged);
+				query_posts('category_name=noticia-cavalaria&paged=' . $paged);
 
 			while (have_posts()) { the_post(); ?>
       									
 
 	   	  	<article>
-	   	  		<div class="four columns">
+	   	  		<div class="large-4 columns">
 	   	  			<ul class="post-date">
 	   	  				<li class="date">
 						<a title="Permanent Link to <?php the_title_attribute(); ?>" rel="bookmark" href="<?php the_permalink(); ?>">
@@ -31,7 +32,7 @@
 							<?	}?>
 					</a>
 	   	  		</div>
-	   	  		<div class="eight columns">
+	   	  		<div class="large-8 columns">
 	   	  			<hgroup>
 						<h4>
 							<a itemprop="title" href="<?php the_permalink(); ?>" rel="bookmark" title="Clique aqui para <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
@@ -51,9 +52,9 @@
 		       	</div>
 			
 	   	  </div>
-
-	</div><!-- eight columns-->
-	<div class="four columns">
+       </div>
+	</div><!-- large-8 columns-->
+	<div class="large-4 columns">
 		<?php get_sidebar("cavalaria"); ?>
 	</div>
 </div><!-- row-->

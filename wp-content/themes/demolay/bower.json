@@ -16,7 +16,8 @@
   "dependencies": {
     "foundation": "5.5.x",
     "bourbon": "3.2.x",
-    "animate.css": "~3.2.0"
+    "animate.css": "~3.2.0",
+    "slick-carousel": "~1.5.9"
   },
   "devDependencies": {
     "jquery": "1.11.3"

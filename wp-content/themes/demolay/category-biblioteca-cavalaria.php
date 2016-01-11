@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<div class="row">
-	<div id="library" class="eight columns">
+<div class="row content-main">
+	<div id="library" class="large-8 columns">
 
 <?php
 	/*
@@ -20,7 +20,7 @@
 
 		<h2><span class="icon-book" aria-hidden="true"></span>Biblioteca da Cavalaria</h2>
 		<div class="row">
-			<div class="twelve columns">
+			<div class="large-12 columns">
 				<section >
 					<h3>PACC</h3>
 					<dl class="tabs">
@@ -30,7 +30,7 @@
 					</dl>
 					<ul class="tabs-content">
 						<li class="active" id="simple1Tab">
-							<div class="twelve columns">
+							<div class="large-12 columns">
 								<ul> <li>
 									<div class="one columns">
 										<a class="icon-switch" target="_blank" href="<?php bloginfo('template_url'); ?>/biblioteca/cavalaria/pacc/introducao/Passo a passo PACC.docx"> 
@@ -70,7 +70,7 @@
 						</div>
 					</li>
 					<li id="simple2Tab">
-						<div class="twelve columns">
+						<div class="large-12 columns">
 								<ul> <li>
 									<div class="one columns">
 										<a class="icon-switch" target="_blank" href="<?php bloginfo('template_url'); ?>/biblioteca/cavalaria/pacc/apostila/Apostila Cavalaria.pdf"> 
@@ -129,7 +129,7 @@
 
 					</li>
 					<li id="simple3Tab">
-						<div class="twelve columns">
+						<div class="large-12 columns">
 								<ul> <li>
 									<div class="one columns">
 										<a class="icon-switch" target="_blank" href="<?php bloginfo('template_url'); ?>/biblioteca/cavalaria/pacc/modelo/PACC Capela - 57700.pdf"> 
@@ -154,7 +154,7 @@
 
 			</section>
 		</div><!-- six columns -->
-		<div class="twelve columns">
+		<div class="large-12 columns">
 			<section id="recent">
 				<h3>Ritualística</h3>
 				<dl class="tabs">
@@ -164,11 +164,11 @@
 				<ul class="tabs-content">
 					<li class="active" id="simple4Tab">
 						<div class="flex-video">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/8KLe2D4qwkg" frameborder="0" allowfullscreen></iframe>
+							<iframe width="560" hlarge-8="315" src="https://www.youtube.com/embed/8KLe2D4qwkg" frameborder="0" allowfullscreen></iframe>
 						</div>
 					</li>
 					<li id="simple5Tab">
-						<div class="twelve columns">
+						<div class="large-12 columns">
 							<ul>
 								<li>
 								<div class="one columns">
@@ -237,8 +237,8 @@
 	<?php
 	}
 	?>
-</div><!-- eight columns-->
-<div class="four columns">
+</div><!-- large-8 columns-->
+<div class="large-4 columns">
 	<?php get_sidebar("cavalaria"); ?>
 </div>
 </div><!-- row-->
