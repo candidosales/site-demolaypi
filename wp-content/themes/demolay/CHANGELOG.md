@@ -3,6 +3,10 @@
 * Correções no CSS da Diretoria e Agenda;
 * Agenda apresentando na home 6 datas;
 * Novo layout para diretoria;
+* Refatorado módulo de calendários;
+* Corrigido as ordenações dos calendários;
+* Novo layout do calendário;
+* Novo layout dos documentos;
 
 ## 3.0.2.0 *(2016-01-03)*
 

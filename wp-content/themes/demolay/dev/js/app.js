@@ -11,35 +11,33 @@ $(document).ready(function(){
           $(this).siblings().stop().fadeTo(500, 1);
       });
 
-    $("a.icon-switch").each(function(i,e){
-         if(/(pdf)$/i.test($(this).attr('href'))){
-            $(this).children().attr({
+    $('a.icon-switch').each(function(i,e) {
+        
+        var href = $(this).attr('href'),
+            $icon = $(this).find('.icon');
+        
+         if(/(pdf)$/i.test(href)) {
+            $icon.attr({
               class: 'icon-file-pdf'
-            })
+            });
          }
 
-         if(/(pptx)$/i.test($(this).attr('href'))){
-            $(this).children().attr({
+         if(/(ppt)$/i.test(href) || /(pptx)$/i.test(href)) {
+            $icon.attr({
               class: 'icon-file-powerpoint'
-            })
+            });
          }
 
-         if(/(ppt)$/i.test($(this).attr('href'))){
-            $(this).children().attr({
-              class: 'icon-file-powerpoint'
-            })
-         }
-
-         if(/(doc)$/i.test($(this).attr('href'))){
-            $(this).children().attr({
+         if(/(doc)$/i.test(href) || /(docx)$/i.test(href)) {
+            $icon.attr({
               class: 'icon-file-word'
-            })
+            });
          }
 
-         if(/(xls)$/i.test($(this).attr('href'))){
-            $(this).children().attr({
+         if(/(xls)$/i.test(href) || /(xlsx)$/i.test(href)) {
+            $icon.attr({
               class: 'icon-file-excel'
-            })
+            });
          }
       });
       
