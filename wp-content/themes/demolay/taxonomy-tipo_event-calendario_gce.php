@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="row">
-  	<div id="calendario" class="eight columns">
+  	<div id="calendario" class="large-8 columns">
 	 <h2> <span class="icon-calendar" aria-hidden="true"></span>Calendário GCE</h2>
 	   <div class="large-12 columns">
 

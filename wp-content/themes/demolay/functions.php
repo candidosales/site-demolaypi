@@ -29,6 +29,7 @@ if (function_exists('add_theme_support')) {
 	add_theme_support('post-thumbnails'); 
 	add_image_size( 'thumb-2', 90, 9999 );
 	add_image_size( 'thumb-3', 190, 9999 );
+    add_image_size( 'thumb-4', 280, 9999 );
 }
 
 add_theme_support('menus');

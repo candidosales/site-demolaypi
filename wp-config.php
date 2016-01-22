@@ -77,3 +77,5 @@ if ( !defined('ABSPATH') )
 	
 /** Configura as variáveis do WordPress e arquivos inclusos. */
 require_once(ABSPATH . 'wp-settings.php');
+
+define("OTGS_DISABLE_AUTO_UPDATES", true);

@@ -127,13 +127,24 @@ ul li ul, ul li ol{
     }
 
 .direction{
-	img{margin-bottom:10px;display:block;background:#ccc}
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding:0;
+    margin-bottom: $global-gutter;
+	img{
+        display:block;
+        background:#ccc;
+        height: 190px;
+        margin-bottom: 0;
+        }
 	hgroup{
+        padding: $global-gutter;
+        display:inline-block;
 		h2{
 			font-size:16px;
 			margin-bottom:5px;
 			color:#323232;
-			   letter-spacing: -1px;
+			letter-spacing: -1px;
 		}
 		p{
 			display:block;
@@ -154,7 +165,6 @@ ul li ul, ul li ol{
 			.cid{margin-bottom:5px}
 		}
 	}
-.row .gce{ padding-bottom: 20px}
 .direction h2 img{float:right; margin:0 2px 0 0}
 
 .cal-gme{
@@ -216,26 +226,42 @@ ul li ul, ul li ol{
 	}
 
 .cal-gme, .cal-mce{
-	position:relative; margin: 15px 0 0;    padding: 20px 20px 20px 55px;
-
+	position:relative; 
+    margin: 15px 0 0;    
+    padding: 20px 20px 20px 55px;
 	 img{
-		height: 50px;  left: -10px;    position: absolute;    top: -9px;    width: 50px;
+		height: 50px;  
+        left: -10px;    
+        position: absolute;    
+        top: -9px;    
+        width: 50px;
 		}
 	ul{
 		li{
-			padding-bottom:5px; 
+			padding-bottom: $global-gutter; 
 			a{
-				font-size:12px;line-height:16px;color:#fff;letter-spacing:-0.5px;
+				font-size:12px;
+                line-height:16px;
+                color:#fff;
+                letter-spacing:-0.5px;
 			}
 			&:first-child{
-				border-bottom:1px dotted #ccc;margin-bottom: 5px;
+				border-bottom:1px dotted #ccc;
+                margin-bottom: 5px;
 				a{
-					font-size:14px;line-height:18px;
+					font-size:14px;
+                    line-height:18px;
 				}
 			}
 		}
 
 	}
+    .cal-full {
+        border-top: 2px solid #fff;
+        padding-top: 10px;
+        text-align: right;
+        font-weight: bold;
+    }
 }
 
 .meta {    font-size: 10px;margin:0;}
@@ -318,7 +344,6 @@ article{
 		margin-bottom:10px;
         height: auto;
         max-width:100%;
-        border-radius: $global-radius;
         max-height: 240px;
 	}
 	hgroup{
@@ -669,26 +694,52 @@ article{
 #calendario{
 	h2{
 		font-size:22px;
-		border-bottom:1px solid #ddd;margin-bottom:20px;padding-bottom:10px;
-		span[class^="icon-"]{font-size:20px;margin-right:5px}
+		border-bottom:1px solid #ddd;
+        margin-bottom:20px;
+        padding-bottom:10px;
+		span[class^="icon-"]{
+            font-size:20px;
+            margin-right:5px;
+            }
 	}
-	.month{margin:0 0 10px 20px;
-		h3{font-size:18px;margin-bottom:10px}
-		ul li{  border-bottom: 1px dotted #CCCCCC;	    margin-bottom: 10px;	    padding-bottom: 10px;
-			float: left; width: 100%; font-size: 10px;
+	.month{
+        margin:0 0 10px 20px;
+		h3{
+            font-size:18px;
+            margin-bottom:10px;
+            }
+		ul li{  
+            border-bottom: 1px dotted #CCCCCC;
+        	margin-bottom: 10px;	    
+            padding-bottom: 10px;
+			float: left; 
+            width: 100%; 
+            font-size: 10px;
 			.details{
-				background:$color-red-2; color:#fff;padding-bottom: 15px; 
+				background:$color-red-2; 
+                color:#fff;
+                padding-bottom: 15px; 
 					p{
+                        color: #fff;
 						font-size:12px;
 						&.date{
-						font-size: 16px;font-weight: bold; padding-top: 15px;margin-bottom: 5px;
+						  font-size: 16px;
+                          font-weight: bold; 
+                          padding-top: 15px;
+                          margin-bottom: 5px;
 						}
 					}
 				}
 				p{
 					font-size: 12px;
-					&.title{font-size: 16px;font-weight: bold;padding-top: 15px;margin-bottom: 5px;}
-					&.location{margin-bottom:10px}
+					&.title{
+                        font-size: 16px;
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                        }
+					&.location{
+                        margin-bottom:10px
+                        }
 				}
 		}
 	}
@@ -748,113 +799,12 @@ footer{clear:both}
 	}
 }
 
-.navigation{padding:20px;float:left;
+.navigation{
+    padding:20px;
+    float:left;
 
 	.alignleft, .alignright{
-		float:left;margin-right:20px;
-	}
-}
-
-@media (max-width: 767px){
- .gce{
- 		ul{
-			li{
-				img{max-height:90px}
-			}
-		}
-		article{
-			img{
-				max-height:143px;
-			}
-		}
-		img{
-				max-height:143px;
-			}
-	}
-}
-	.glej{
-			img{
-				max-height: 240px;
-			}
-			#secretarios{
-				div img{
-					max-height: 130px;
-				}
-			}
-	}
-
-@media (min-width: 768px) and (max-width: 979px) { 
-	.direction{
-		img{
-			max-width:100%;max-height:100%;
-		}
-	}
-	.glej{
-			img{
-				max-height: 240px;
-			}
-			#secretarios{
-				div img{
-					max-height: 130px;
-				}
-			}
-	}
-	.gce{
-		ul{
-			li{
-				img{max-height:90px}
-			}
-		}
-		img{
-				max-height:170px;
-			}
-	}
-	#cavalry , #alumni , #court{
-		article{
-			img{
-				max-width: 100%;max-height: 104px;
-			}
-		}
-	}
-
-}
-
-@media (min-width: 1200px) { 
-	.direction{
-		img{
-			max-width:100%;max-height:100%;
-		}
-	}
-	.glej{
-			img{
-				max-height: 240px;
-			}
-			#secretarios{
-				div img{
-					max-height: 130px;
-				}
-			}
-	}
-	.gce{
-		ul{
-			li{
-				img{max-height:90px}
-			}
-		}
-		article{
-			img{
-				max-height:180px;
-			}
-		}
-		img{
-				max-height:180px;
-			}
-	}
-	#cavalry , #alumni , #court{
-		article{
-			img{
-				max-width: 170px;max-height: 114px;
-			}
-		}
+		float:left;
+        margin-right:20px;
 	}
 }
