@@ -1,4 +1,4 @@
-## 3.0.4.0 *(2016-01-25)*
+## 3.0.4.1 *(2016-01-25)*
 
 * Otimizado a forma de ordenamento dos diretores;
 
