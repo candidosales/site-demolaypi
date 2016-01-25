@@ -1,106 +1,4 @@
-    /*---------------------------------------------------
-        WordPress
-    ---------------------------------------------------*/
-    /* Images */
-    .entry-content img,
-    .comment-content img,
-    .widget img {
-        max-width: 97.5%; /* Fluid images for posts, comments, and widgets */
-    }
-    img[class*="align"],
-    img[class*="wp-image-"],
-    img[class*="attachment-"] {
-        height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
-    }
-    img.size-full,
-    img.size-large {
-        max-width: 97.5%;
-        width: auto; /* Prevent stretching of full-size and large-size images with height and width attributes in IE8 */
-        height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
-    }
-    .entry-content img.wp-smiley {
-        border: none;
-        margin-bottom: 0;
-        margin-top: 0;
-        padding: 0;
-    }
-    img.alignleft,
-    img.alignright,
-    img.aligncenter {
-        margin-bottom: 1.625em;
-    }
-    p img,
-    .wp-caption {
-        margin-top: 0.4em;
-    }
-    .wp-caption {
-        background: #eee;
-        margin-bottom: 1.625em;
-        max-width: 96%;
-        padding: 9px;
-    }
-    .wp-caption img {
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-        max-height:100%;
-    }
-    .wp-caption .wp-caption-text,
-    .gallery-caption {
-        color: #666;
-        font-family: Georgia, serif;
-        font-size: 12px;
-    }
-    .wp-caption .wp-caption-text {
-        margin-bottom: 0.6em;
-        padding: 10px 0 5px 40px;
-        position: relative;
-    }
-    .wp-caption .wp-caption-text:before {
-        color: #666;
-        content: '\2014';
-        font-size: 14px;
-        font-style: normal;
-        font-weight: bold;
-        margin-right: 5px;
-        position: absolute;
-        left: 10px;
-        top: 7px;
-    }
-    /* Alignment */
-    .alignleft {
-        display: inline;
-        float: left;
-        margin-right: 1.625em;
-    }
-    .alignright {
-        display: inline;
-        float: right;
-        margin-left: 1.625em;
-    }
-    .aligncenter {
-        clear: both;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
-    /*---------------------------------------------------
-        Foundation Adaptive
-    ---------------------------------------------------*/
-    p{margin:0;line-height:1.0}
-    aside{
-        p{
-            margin:0;
-        }
-    }
-    ul, ol, dl{
-        line-height:1.0;
-    }
-    ul li ul, ul li ol{
-        margin:0;
-    }
-    .has-tip,.has-tip:hover{border-bottom:none;}
     /*---------------------------------------------------
         General
     ---------------------------------------------------*/
@@ -110,7 +8,7 @@
     .textLeft{text-align:left}
     .textRight{text-align:right}
     .center{margin:0 auto;width:940px}
-    .post-highlights,#recent,#videos,#cavalry,#alumni,#court,#map, #mestres-regionais,#regioes, #conselho-consultivo, .direction,.wrap-1{
+    .post-highlights,#recent,#videos,#cavalry,#alumni,#court,#map, #mestres-regionais,#regioes, #conselho-consultivo ,.wrap-1{
         position:relative;
         padding-bottom: 30px;
         }
@@ -126,36 +24,6 @@
         margin:0 10px
         }
 
-    .direction{
-        border: 1px solid #ccc;
-        display: inline-block;
-        padding:0;
-        margin-bottom: $global-gutter;
-        img{
-            display:block;
-            background:#ccc;
-            height: 190px;
-            margin-bottom: 0;
-            }
-        hgroup{
-            padding: $global-gutter;
-            display:inline-block;
-            h2{
-                font-size:16px;
-                margin-bottom:5px;
-                color:#323232;
-                letter-spacing: -1px;
-            }
-            p{
-                display:block;
-                float:left;
-                width:100%;
-                font-size:12px;
-                span[class^="icon-"]{font-size:16px;margin-right:4px}
-            }
-        }
-
-    }
         .gce{
             hgroup{
                 h2{
@@ -165,7 +33,7 @@
                 .cid{margin-bottom:5px}
             }
         }
-    .direction h2 img{float:right; margin:0 2px 0 0}
+
 
     .cal-gme{
         @include radial-gradient($color-red-1, $color-red-2);
@@ -197,8 +65,7 @@
         display: block;    
         left: 0;
         position: absolute;
-        top: 0;    
-        width: 70px;
+        top: 0;
         li {
             float: right;    
             font-size: 10px;    
@@ -218,12 +85,18 @@
 
     .leadership{
         img{
-            display:block;background:#454545;margin:0 10px 10px 0;float:left
+            display:block;
+            background:#454545;
+            margin:0 10px 10px 0;
+            float:left;
             }
         .row{
                 margin-bottom: 20px
             }
-        }
+         p{
+             font-size: 12px;
+         }
+    }
 
     .cal-gme, .cal-mce{
         position:relative; 
@@ -282,7 +155,12 @@
         }
         
     b{font-weight:bold}
-    body{text-rendering: optimizeLegibility;font-family:Arial;width:100%;height:100%;font-size:12px; color:#555}
+    body{
+        font-family: Arial;
+        width:100%;
+        height:100%;
+        font-size:12px; 
+        color:#555;}
     header{
         width:100%;
         background: $color-red-1; /* Old browsers */
@@ -417,8 +295,7 @@
         h4 {
             display: block;    
             font-size: 16px;    
-            letter-spacing: -1px;    
-            line-height: 1.2em; 
+            letter-spacing: -1px;
             }
         }
 
@@ -592,37 +469,13 @@
     #banner{
         width:280px;height:200px;margin-bottom:10px;
     }
-    .post{
-        hgroup{
-            h2{
-                color:#680000;
-                font-size:28px;
-                letter-spacing: 0.2px;
-                margin:0 0 5px 0;
-            }
-        }
-        .meta{
-            font-size:12px;line-height:19px;color:#555;letter-spacing: 0.2px;margin-bottom:0;
-        }
-        p{
-            line-height: 21px;margin-bottom:25px;
-        }
-        ul{line-height: 21px;
-            li{	margin-bottom:5px}
-        }
-        .social{
-            display:block;margin-bottom:15px; opacity: 0.5; float:left; width:100%;border-bottom:1px solid #ccc;padding-bottom:10px;
-            .twitter,.facebook{float:left;margin-right:20px;}
-            &:hover{
-                opacity: 1;
-            }
-        }
-    }
-
+    
     #documents, #library{
         h2{
             font-size:22px;
-            border-bottom:1px solid #ddd;margin-bottom:20px;padding-bottom:10px;
+            border-bottom:1px solid #ddd;
+            margin-bottom:20px;
+            padding-bottom:10px;
             span{ 
                 font-size: 20px;
                 margin-right: 5px;}

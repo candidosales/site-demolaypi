@@ -4,5 +4,23 @@
         border-color: transparent;
         border-radius: $global-radius;
         color: #fff;
+    }
+    
+    
+    ::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    :-moz-placeholder {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    ::-moz-placeholder {
+        color: rgba(255, 255, 255, 0.7);
+        opacity: 1; /* Since FF19 lowers the opacity of the placeholder by default */
+    }
+
+    :-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.7);
     }   
 }

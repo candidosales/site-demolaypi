@@ -3,9 +3,7 @@
 			<div class="large-12 columns">
 			<footer role="contentinfo">
 				<div class="large-6 columns">
-					<p>Rua Magalhães Filho, 1270 Marquês</p>
-					<p>64002-450</p>
-					<p>Teresina-PI</p>
+					<p>Rua Magalhães Filho, 1270 Marquês<br/>64002-450<br/>Teresina-PI</p>
 				</div>
 				<div class="large-6 columns">
 					<div id="site-info">
@@ -56,7 +54,6 @@
 	</script>
     
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() )  ?>/dist/css/style.min.css" />
     <script src="<?php echo esc_url( get_template_directory_uri() ) ?>/dist/js/main.min.js"></script>
 </body>
 </html>

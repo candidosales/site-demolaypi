@@ -11,7 +11,7 @@
 			</h2>
 		  <?php echo get_post_meta($post->ID, 'PostThumb',true); ?>
 		  <p class="meta">
-			<span>Por</span> <?php the_author_meta("first_name"); ?> <span>em</span> <?php the_time('j/m.Y'); ?> | <?php the_category(', '); ?> 
+			<span>Por</span> <?php the_author_meta("first_name"); ?> <span>em</span> <?php the_time('d/m/Y'); ?> | <?php the_category(', '); ?> 
 		  </p>
 	  </hgroup>
 	  <div class="social">

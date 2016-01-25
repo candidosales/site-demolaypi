@@ -225,3 +225,105 @@ function sksort(&$array, $subkey="id", $sort_ascending=false) {
 
     else $array = $temp_array;
 }
+
+
+function args_diretoria($args) {
+    $meta_value = isset($args['meta_value']) ? $args['meta_value'] :  null;
+    $type = isset($args['type']) ? $args['type'] :  null;
+    $posts_per_page = isset($args['posts_per_page']) ? $args['posts_per_page'] : 20;
+    $exclude = isset($args['exclude']) ? $args['exclude'] : false;    
+    
+    $array = array(
+        'post_type' => 'membro-diretoria',
+        'meta_key'  => 'wpcf-posicao',
+        'orderby' => 'meta_value_num',
+        'order'   => 'ASC',
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'tipo-diretoria',
+                'field'    => 'slug',
+                'terms'    => $type,
+            ),
+        ),
+    );
+    
+    $array['posts_per_page'] = $posts_per_page;
+    
+    if ($meta_value && !$exclude) {
+        $array['posts_per_page'] = 1;
+        $array['meta_key'] = 'wpcf-funcao';
+        $array['meta_value'] = $meta_value;
+    }
+    
+    if ($exclude) {
+        
+        $meta_query = array();
+        
+        foreach($meta_value as $value) {
+            $aux = array(
+                'key' => 'wpcf-funcao',
+                'value' => $value,
+                'compare' => '!='
+            );
+            
+            array_push($meta_query, $aux);
+        }
+        
+        $array['meta_query'] = $meta_query;
+    }
+    
+    return $array;
+}
+
+function get_template_diretoria($args) {
+    query_posts( $args );
+    while (have_posts()) { 
+        the_post();
+        $custom_fields = get_post_custom(); 
+    
+    ?>
+
+<div class="large-3 columns">
+        <article itemscope itemtype="http://schema.org/Person" class="direction ">
+                    
+                    <?php 
+                    if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+                        the_post_thumbnail('thumb-4');
+                    }
+                    else { ?>
+                        <img itemprop="image" src=""></img>
+                    <?php } ?>
+
+                <hgroup>
+                    <h3 itemprop="name"><?php the_title(); ?> 
+                        <a href="<?php echo $custom_fields['wpcf-facebook'][0] ?>" target="_blank" title="Conheça o facebook">
+                            <span class="icon-facebook " aria-hidden="true"></span>
+                        </a>
+                    </h3>
+                    <p>
+                        <span class="responsability left" itemprop="jobTitle"><?php echo $custom_fields['wpcf-funcao'][0] ?> </span>				
+                    </p>
+                    <p class="cid">
+                        <span class="left"><?php echo $custom_fields['wpcf-cid'][0] ?> </span>	
+                    </p>
+                    <p>
+                        <span class="left" itemprop="email">
+                            <a href="mailto:<?php echo $custom_fields['wpcf-e-mail'][0] ?> " target="_blank">
+                                <span class="icon-mail " aria-hidden="true"></span><?php echo $custom_fields['wpcf-e-mail'][0] ?> 
+                            </a>
+                        </span>
+                    </p>
+                    <p>
+                        <span class="left" itemprop="telephone">
+                            <a href="tel:<?php echo $custom_fields['wpcf-telefone'][0] ?> ">
+                                <span class="icon-phone " aria-hidden="true"></span><?php echo $custom_fields['wpcf-telefone'][0] ?> 
+                            </a>
+                        </span>
+                    </p>
+                </hgroup>
+        </article>
+</div>
+
+<?php
+    }    
+}

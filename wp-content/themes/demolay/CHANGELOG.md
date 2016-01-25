@@ -1,3 +1,12 @@
+## 3.0.4.0 *(2016-01-25)*
+
+* Otimizado a forma de ordenamento dos diretores;
+
+## 3.0.4.0 *(2016-01-24)*
+
+* Página de Diretores finalizado;
+* CSS do rodapé, removido css lixo e reorganizado o css do WordPress;
+
 ## 3.0.3.0 *(2016-01-22)*
 
 * Correções no CSS da Diretoria e Agenda;

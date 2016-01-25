@@ -1,0 +1,50 @@
+#direction{
+        h2{
+            font-size:22px;
+            border-bottom:1px solid #ddd;
+            margin-bottom:20px;
+            padding-bottom:10px;
+        }
+        h3{
+            font-size: 18px;
+            width: 240px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    
+.direction{
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding:0;
+    margin-bottom: $global-gutter;
+    position:relative;
+    img{
+        display:block;
+        background:#ccc;
+        height: 190px;
+        margin-bottom: 0;
+        }
+    h2 img{
+        float:right; 
+        margin:0 2px 0 0;
+        }
+    hgroup{
+        padding: $global-gutter;
+        display:inline-block;
+        h2{
+            font-size:16px;
+            margin-bottom:5px;
+            color:#323232;
+            letter-spacing: -1px;
+        }
+        p{
+            display:block;
+            float:left;
+            width:100%;
+            font-size:12px;
+            span[class^="icon-"]{font-size:16px;margin-right:4px}
+        }
+    }
+}
