@@ -52,8 +52,6 @@
 
 
 	</script>
-    
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,700' rel='stylesheet' type='text/css'>
     <script src="<?php echo esc_url( get_template_directory_uri() ) ?>/dist/js/main.min.js"></script>
 </body>
 </html>

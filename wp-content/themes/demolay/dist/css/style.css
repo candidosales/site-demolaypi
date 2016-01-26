@@ -8495,7 +8495,7 @@ article hgroup {
   width: 100%; }
   #calendario .month h3 {
     font-size: 18px;
-    margin: 30px 0; }
+    margin: 10px 0 30px 0; }
   #calendario .month ul li {
     border-bottom: 1px dotted #CCCCCC;
     margin-bottom: 15px;
@@ -8802,6 +8802,9 @@ footer p {
   border-color: transparent;
   border-radius: 5px;
   color: #fff; }
+
+.searchform input[type="search"]:focus, .searchform input[type="tel"]:focus, .searchform input[type="time"]:focus, .searchform input[type="url"]:focus, .searchform input[type="color"]:focus, .searchform textarea:focus {
+  background: #6e101d; }
 
 .searchform ::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.7); }
@@ -9340,3 +9343,9 @@ p > video {
   .widecolumn {
     margin: 7.6923% 0 0;
     padding: 0; } }
+
+#instafeed {
+  overflow: hidden; }
+  #instafeed a {
+    display: inline-block;
+    margin: 0 4px 4px 4px; }

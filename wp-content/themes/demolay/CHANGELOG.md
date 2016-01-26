@@ -1,3 +1,8 @@
+## 3.0.5.0 *(2016-01-26)*
+
+* Instagram na página;
+* Correção do css no campo de busca;
+
 ## 3.0.4.1 *(2016-01-25)*
 
 * Otimizado a forma de ordenamento dos diretores;

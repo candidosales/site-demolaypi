@@ -6,6 +6,10 @@
         color: #fff;
     }
     
+    input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="color"]:focus, textarea:focus{
+        background: darken($color-red-2, 10%);
+    }
+    
     
     ::-webkit-input-placeholder {
         color: rgba(255, 255, 255, 0.7);

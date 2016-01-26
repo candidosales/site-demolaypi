@@ -58,7 +58,7 @@
 	 		<?php get_template_part('inc/webmail'); ?>
 	 	</li>
 		<li class="widget" >	
-			<?php get_template_part('inc/publicidade'); ?>
+			<?php // get_template_part('inc/publicidade'); ?>
 		</li>
 		
 	  <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar()) { ?>

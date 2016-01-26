@@ -288,16 +288,19 @@ function get_template_diretoria($args) {
                     
                     <?php 
                     if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-                        the_post_thumbnail('thumb-4');
-                    }
+                    ?>
+                        <a href="<?php echo $custom_fields['wpcf-facebook'][0] ?>" target="_blank" title="Conheça o facebook">
+                            <?php the_post_thumbnail('thumb-4'); ?>
+                        </a>
+                    <?php }
                     else { ?>
                         <img itemprop="image" src=""></img>
                     <?php } ?>
 
                 <hgroup>
-                    <h3 itemprop="name"><?php the_title(); ?> 
+                    <h3 itemprop="name">
                         <a href="<?php echo $custom_fields['wpcf-facebook'][0] ?>" target="_blank" title="Conheça o facebook">
-                            <span class="icon-facebook " aria-hidden="true"></span>
+                            <?php the_title(); ?> 
                         </a>
                     </h3>
                     <p>

@@ -47,4 +47,23 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 2000
       });
+      
+      var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'gcepi',
+        sortBy: 'most-recent',
+        resolution: 'thumbnail',
+        clientId: '93040b037d024bd591f54d1ce5c6e518',
+        accessToken: '33412004.1677ed0.a45dfc2d8ac1483caf41348d0ff39b3d',
+        template: '<a href="{{link}}" class="has-tip tip-top" data-tooltip aria-haspopup="true" title="{{caption}}" target="_blank"><img src="{{image}}" /></a>',
+        success: function() {
+            $(document).foundation({
+                tooltip: {
+                    selector : '.has-tip',
+              }
+            });
+        },
+    });
+    
+    feed.run();
 });

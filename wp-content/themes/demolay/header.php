@@ -23,6 +23,7 @@
 	<link rel="apple-touch-icon" sizes="144x144" href="<?php echo esc_url( get_template_directory_uri() )  ?>/dist/img/apple-touch-icon-144x144-precomposed.png" />
 
 	<meta name="apple-mobile-web-app-status-bar-style" content="red" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() )  ?>/dist/css/style.css" />
 
 	<?php wp_head(); ?>	

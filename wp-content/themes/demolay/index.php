@@ -169,6 +169,7 @@
 		<?php get_sidebar(); ?>
 	</div>
 </div><!-- row-->
+<div id="instafeed" class="large-12 columns no-padding"></div>
 <?php get_footer(); ?>
 
 
