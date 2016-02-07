@@ -1,3 +1,7 @@
+## 3.0.5.0 *(2016-02-06)*
+
+* Corrigido a criação de páginas;
+
 ## 3.0.5.0 *(2016-01-26)*
 
 * Instagram na página;

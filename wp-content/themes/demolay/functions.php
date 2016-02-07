@@ -25,8 +25,9 @@ function custom_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 if (function_exists('add_theme_support')) { 
-	add_theme_support( 'post-formats', array( 'aside', 'gallery','audio','video' ) );	
-	add_theme_support('post-thumbnails'); 
+	add_theme_support('post-formats', array( 'aside', 'gallery','audio','video'));	
+	add_theme_support('post-thumbnails');
+    add_theme_support('title-tag'); 
 	add_image_size( 'thumb-2', 90, 9999 );
 	add_image_size( 'thumb-3', 190, 9999 );
     add_image_size( 'thumb-4', 280, 9999 );

@@ -1,19 +1,22 @@
+<?php get_header(); ?>
+<div class="row content-main">
+  	<div class="large-12 columns">
 <?php if (have_posts()){ ?>
   <?php while (have_posts()) {
 	the_post(); ?>
     <article class="post" id="post-<?php the_ID(); ?>"> 
 		<hgroup>
 			<h2>
-				<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+				<?php the_title(); ?>
 			</h2>
 		  <?php echo get_post_meta($post->ID, 'PostThumb',true); ?>
 		  <p class="meta">
-			<span>Posted on</span> <?php the_time('F jS, Y'); ?> <span>by</span> <?php the_author(); ?>
+			<span>Por</span> <?php the_author_meta("first_name"); ?> <span>em</span> <?php the_time('d/m/Y'); ?> | <?php the_category(', '); ?> 
 		  </p>
 	  </hgroup>
       <?php the_content('Read Full Article'); ?>
       <p><?php the_tags('Tags: ', ', ', '<br />'); ?>   
-      Posted in <?php the_category(', '); ?>   <?php comments_popup_link('No Comments;','1 Comment', '% Comments'); ?></p>
+      <?php disqus_embed('demolaypi'); ?>
     </article>
   <?php } ?>
   <?php next_posts_link('Older Entries'); ?>
@@ -21,3 +24,6 @@
 <?php }else { ?>
   <h2>Nothing Found</h2>
 <?php } ?>
+	</div><!-- large-12 columns-->
+</div><!-- row-->
+<?php get_footer(); ?>
