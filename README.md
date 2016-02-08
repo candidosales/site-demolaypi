@@ -1,5 +1,5 @@
 # site-demolaypi
-Template para WordPress do site da Ordem DeMolay Piauí
+Template para WordPress 4.4.2 do site da Ordem DeMolay Piauí
 
 ## Stack
 
