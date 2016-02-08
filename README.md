@@ -9,7 +9,8 @@ Template para WordPress do site da Ordem DeMolay Piauí
 * [Bourbon](http://bourbon.io/)
 * [Animate](https://daneden.github.io/animate.css/)
 
-## (Changelog do tema)[https://github.com/candidosales/site-demolaypi/blob/master/wp-content/themes/demolay/CHANGELOG.md]
+## Changelog do tema
+Veja as últimas mudanças [aqui](https://github.com/candidosales/site-demolaypi/blob/master/wp-content/themes/demolay/CHANGELOG.md)
 
 ## Contribuidores
 * [candidosales](https://github.com/candidosales) 
