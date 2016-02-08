@@ -1,3 +1,7 @@
+## 3.0.5.2 *(2016-02-08)*
+
+* Incluído a opção de banner nas páginas;
+
 ## 3.0.5.1 *(2016-02-06)*
 
 * Corrigido a criação de páginas;

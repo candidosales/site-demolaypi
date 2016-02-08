@@ -33,6 +33,7 @@
 <php flush(); ?>
 <body class="example">
     <?php get_template_part( 'inc/nav' );?>
+    <?php get_template_part( 'inc/banner-page' ); ?>
     <?php if(function_exists('rdfa_breadcrumb')){ ?>
 	<nav id="breadcrumb">
 		<div class="row">
